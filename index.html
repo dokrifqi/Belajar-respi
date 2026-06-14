@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PPDS IKA – Respirologi Anak Lengkap</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --m:#0C4A6E;--ml:#0369A1;--gold:#C4923A;--gl:#E8B86D;
+  --cream:#F0F7FF;--cd:#CCE4F7;--tx:#0C1A28;--tm:#2E5A7A;
+  --gr:#3A7B5C;--grl:#E8F5EE;--bl:#2563A8;--bll:#EEF4FF;
+  --rl:#FDEAEA;--or:#F97316;--orl:#FFF7ED;
+  --teal:#0D9488;--tll:#F0FDFA;
+  --pur:#7C3AED;--purl:#F5F3FF;
+  --sky:#0EA5E9;--skyl:#F0F9FF;
+  --sh:0 4px 24px rgba(12,74,110,.10);--shh:0 8px 40px rgba(12,74,110,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--tx);min-height:100vh}
+.hdr{background:linear-gradient(135deg,#0C3D5E,#0369A1);position:sticky;top:0;z-index:100;box-shadow:0 2px 16px rgba(12,74,110,.35)}
+.hdr-in{max-width:960px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:12px 15px}
+.htitle{font-family:'Fraunces',serif;font-size:.95rem;font-weight:700;color:#fff;line-height:1.2}
+.hsub{font-size:.67rem;color:var(--gl)}
+.badge{background:var(--gold);color:#fff;font-size:.62rem;font-weight:600;padding:3px 8px;border-radius:20px;white-space:nowrap}
+.nav{background:rgba(12,61,94,.9);display:flex;overflow-x:auto;scrollbar-width:none}
+.nav::-webkit-scrollbar{display:none}
+.nb{flex-shrink:0;background:transparent;border:none;color:rgba(255,255,255,.75);font-family:'DM Sans',sans-serif;font-size:.73rem;font-weight:500;padding:9px 12px;cursor:pointer;transition:all .2s;white-space:nowrap;border-bottom:3px solid transparent}
+.nb:hover{color:#fff;background:rgba(255,255,255,.1)}
+.nb.active{color:var(--gl);border-bottom-color:var(--gl);background:rgba(255,255,255,.12)}
+.main{max-width:960px;margin:0 auto;padding:16px 12px 60px}
+.sec{display:none;animation:fi .3s ease}
+.sec.active{display:block}
+@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.sl{font-size:.64rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tm);font-weight:600;margin-bottom:10px;padding-bottom:6px;border-bottom:2px solid var(--cd)}
+.card{background:#fff;border-radius:13px;padding:14px;box-shadow:var(--sh);border:1px solid var(--cd);margin-bottom:10px}
+.ctitle{font-family:'Fraunces',serif;font-size:.88rem;font-weight:600;color:var(--m);margin-bottom:9px;display:flex;align-items:center;gap:6px}
+.icon{width:22px;height:22px;background:var(--m);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:.74rem;flex-shrink:0}
+.kl{list-style:none}
+.kl li{padding:4px 0;font-size:.79rem;line-height:1.55;border-bottom:1px solid var(--cd);display:flex;align-items:flex-start;gap:6px}
+.kl li:last-child{border-bottom:none}
+.kl li::before{content:'›';color:var(--gold);font-weight:700;flex-shrink:0}
+.hl{background:linear-gradient(135deg,#FFF8EC,#FFF3D8);border-left:3px solid var(--gold);padding:7px 11px;border-radius:0 8px 8px 0;margin:6px 0;font-size:.77rem;line-height:1.6}
+.hl strong{color:var(--m)}
+.hlg{background:var(--grl);border-left:3px solid var(--gr);padding:7px 11px;border-radius:0 8px 8px 0;margin:6px 0;font-size:.77rem;line-height:1.6}
+.hlb{background:var(--bll);border-left:3px solid var(--bl);padding:7px 11px;border-radius:0 8px 8px 0;margin:6px 0;font-size:.77rem;line-height:1.6}
+.hlr{background:var(--rl);border-left:3px solid #E74C3C;padding:7px 11px;border-radius:0 8px 8px 0;margin:6px 0;font-size:.77rem;line-height:1.6}
+.hlsky{background:var(--skyl);border-left:3px solid var(--sky);padding:7px 11px;border-radius:0 8px 8px 0;margin:6px 0;font-size:.77rem;line-height:1.6}
+.hlp{background:var(--purl);border-left:3px solid var(--pur);padding:7px 11px;border-radius:0 8px 8px 0;margin:6px 0;font-size:.77rem;line-height:1.6}
+table.t{width:100%;border-collapse:collapse;font-size:.73rem;margin-top:5px}
+table.t th{background:var(--m);color:#fff;padding:5px 7px;text-align:left;font-weight:500;font-size:.7rem}
+table.t td{padding:5px 7px;border-bottom:1px solid var(--cd);font-size:.72rem;vertical-align:top}
+table.t tr:last-child td{border-bottom:none}
+table.t tr:nth-child(even) td{background:var(--cream)}
+.grid2{display:grid;grid-template-columns:1fr;gap:10px}
+@media(min-width:560px){.grid2{grid-template-columns:1fr 1fr}}
+.sev-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin:8px 0}
+@media(max-width:480px){.sev-grid{grid-template-columns:1fr}}
+.sev-box{border-radius:10px;padding:10px;font-size:.73rem;line-height:1.5}
+.sv-g{background:#E8F5EE;border:2px solid var(--gr)}.sv-g .svn{color:var(--gr);font-weight:700;font-size:.75rem;margin-bottom:3px}
+.sv-o{background:var(--orl);border:2px solid var(--or)}.sv-o .svn{color:var(--or);font-weight:700;font-size:.75rem;margin-bottom:3px}
+.sv-r{background:var(--rl);border:2px solid #E74C3C}.sv-r .svn{color:#C0392B;font-weight:700;font-size:.75rem;margin-bottom:3px}
+.sv-b{background:var(--skyl);border:2px solid var(--sky)}.sv-b .svn{color:var(--sky);font-weight:700;font-size:.75rem;margin-bottom:3px}
+.crit-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}
+.crit-box{border-radius:10px;padding:10px;font-size:.73rem;line-height:1.55}
+.cb-g{background:var(--grl);border:2px solid var(--gr)}.cb-g .cn{color:var(--gr);font-weight:700;font-size:.75rem;margin-bottom:4px}
+.cb-b{background:var(--bll);border:2px solid var(--bl)}.cb-b .cn{color:var(--bl);font-weight:700;font-size:.75rem;margin-bottom:4px}
+.cb-r{background:var(--rl);border:2px solid #E74C3C}.cb-r .cn{color:#C0392B;font-weight:700;font-size:.75rem;margin-bottom:4px}
+.cb-sky{background:var(--skyl);border:2px solid var(--sky)}.cb-sky .cn{color:var(--sky);font-weight:700;font-size:.75rem;margin-bottom:4px}
+.cb-gold{background:#FFF8E8;border:2px solid var(--gold)}.cb-gold .cn{color:#B7791F;font-weight:700;font-size:.75rem;margin-bottom:4px}
+.step-flow{display:flex;flex-direction:column;gap:6px;margin:8px 0}
+.step-box{border-radius:9px;padding:9px 12px;font-size:.76rem;line-height:1.5;display:flex;align-items:flex-start;gap:10px}
+.step-num{width:22px;height:22px;border-radius:50%;font-weight:700;font-size:.72rem;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.s1{background:var(--grl);border:1.5px solid var(--gr)}.s1 .step-num{background:var(--gr);color:#fff}
+.s2{background:#FFF8E8;border:1.5px solid var(--gold)}.s2 .step-num{background:var(--gold);color:#fff}
+.s3{background:var(--rl);border:1.5px solid #E74C3C}.s3 .step-num{background:#E74C3C;color:#fff}
+.s4{background:var(--bll);border:1.5px solid var(--bl)}.s4 .step-num{background:var(--bl);color:#fff}
+.s5{background:var(--skyl);border:1.5px solid var(--sky)}.s5 .step-num{background:var(--sky);color:#fff}
+.btn{font-family:'DM Sans',sans-serif;font-size:.79rem;font-weight:600;padding:9px 18px;border-radius:50px;border:none;cursor:pointer;transition:all .2s}
+.btn-p{background:var(--m);color:#fff}.btn-p:hover{background:var(--ml)}
+.btn-s{background:var(--cd);color:var(--tm)}
+.btn-full{width:100%;padding:11px;border-radius:10px}
+/* FLASHCARD */
+.fc-progress-bar{width:100%;height:4px;background:var(--cd);border-radius:2px;margin-bottom:13px}
+.fc-progress-fill{height:100%;background:var(--m);border-radius:2px;transition:width .3s}
+.fc-info{text-align:center;margin-bottom:10px;color:var(--tm);font-size:.76rem}
+.flashcard-wrap{perspective:1000px}
+.flashcard{width:100%;max-width:500px;margin:0 auto;height:240px;cursor:pointer;position:relative;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.flashcard.flipped{transform:rotateY(180deg)}
+.fc-face{position:absolute;inset:0;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;backface-visibility:hidden;padding:20px;box-shadow:var(--shh);text-align:center}
+.fc-front{background:linear-gradient(135deg,#0C3D5E,#0369A1);color:#fff}
+.fc-back{background:#fff;color:var(--tx);transform:rotateY(180deg);border:2px solid var(--cd)}
+.fc-lbl{font-size:.61rem;text-transform:uppercase;letter-spacing:.1em;opacity:.7;margin-bottom:7px}
+.fc-front .fc-lbl{color:var(--gl)}
+.fc-back .fc-lbl{color:var(--tm)}
+.fc-q{font-family:'Fraunces',serif;font-size:.88rem;line-height:1.5;font-weight:600}
+.fc-a{font-size:.75rem;line-height:1.6}
+.fc-hint{font-size:.65rem;margin-top:7px;opacity:.7}
+.fc-ctrls{display:flex;justify-content:center;gap:8px;margin-top:13px;flex-wrap:wrap}
+.chip{font-size:.7rem;padding:4px 10px;border-radius:20px;border:1.5px solid var(--cd);background:#fff;cursor:pointer;font-family:'DM Sans',sans-serif;color:var(--tm);transition:all .2s}
+.chip:hover,.chip.active{background:var(--m);color:#fff;border-color:var(--m)}
+.chips{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:11px;justify-content:center}
+/* KUIS */
+.q-card{background:#fff;border-radius:12px;padding:17px;box-shadow:var(--sh);border:1px solid var(--cd);margin-bottom:10px}
+.q-num{font-size:.65rem;text-transform:uppercase;letter-spacing:.08em;color:var(--tm);margin-bottom:5px}
+.q-text{font-family:'Fraunces',serif;font-size:.88rem;font-weight:600;line-height:1.6;margin-bottom:12px}
+.options{display:flex;flex-direction:column;gap:7px}
+.opt{text-align:left;background:var(--cream);border:1.5px solid var(--cd);border-radius:9px;padding:9px 12px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.77rem;line-height:1.5;transition:all .2s;color:var(--tx);display:flex;align-items:flex-start;gap:7px}
+.opt:hover:not(:disabled){border-color:var(--m);background:#E8F4FF}
+.opt.correct{background:var(--grl);border-color:var(--gr);color:#1A5C30}
+.opt.wrong{background:var(--rl);border-color:#E74C3C;color:#C0392B}
+.opt:disabled{cursor:default}
+.ol{width:19px;height:19px;border-radius:50%;background:var(--m);color:#fff;font-size:.67rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+.opt.correct .ol{background:var(--gr)}
+.opt.wrong .ol{background:#E74C3C}
+.q-expl{background:var(--grl);border-left:3px solid var(--gr);border-radius:0 7px 7px 0;padding:9px 11px;margin-top:10px;font-size:.75rem;line-height:1.6;color:#1A5C30;display:none}
+.q-expl.show{display:block;animation:fi .3s}
+.qhdr{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.qtimer{background:var(--m);color:#fff;font-family:'Fraunces',serif;font-size:.95rem;font-weight:600;padding:5px 12px;border-radius:18px;min-width:48px;text-align:center}
+.qtimer.warn{background:#C0392B;animation:pulse 1s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.7}}
+.qresult{text-align:center;padding:22px 14px;background:#fff;border-radius:12px;box-shadow:var(--sh)}
+.rscore{font-family:'Fraunces',serif;font-size:2.4rem;font-weight:700;color:var(--m)}
+.rlabel{font-size:.78rem;color:var(--tm);margin-top:3px;margin-bottom:14px}
+.remoji{font-size:2rem;margin-bottom:6px}
+.mode-sel{display:flex;gap:8px;margin-bottom:14px}
+.mode-btn{flex:1;padding:10px;border-radius:10px;border:2px solid var(--cd);background:#fff;cursor:pointer;text-align:center;transition:all .2s;font-family:'DM Sans',sans-serif}
+.mode-btn:hover,.mode-btn.active{border-color:var(--m);background:var(--skyl)}
+.mode-btn .mi{font-size:1.2rem;margin-bottom:2px}
+.mode-btn .mn2{font-size:.75rem;font-weight:600;color:var(--m)}
+.mode-btn .md{font-size:.66rem;color:var(--tm)}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <div class="hdr-in">
+    <div>
+      <div class="htitle">Respirologi Anak – Lengkap</div>
+      <div class="hsub">PPDS IKA · Asma · Pneumonia · TB · Bronkiolitis · Croup · Difteri · Pertusis · @dokrifqi</div>
+    </div>
+    <span class="badge">PPDS IKA</span>
+  </div>
+  <nav class="nav">
+    <button class="nb active" onclick="showSec('asma',this)">🫁 Asma</button>
+    <button class="nb" onclick="showSec('pneumonia',this)">🔬 Pneumonia</button>
+    <button class="nb" onclick="showSec('tb',this)">🦠 Tuberkulosis</button>
+    <button class="nb" onclick="showSec('bronkiolitis',this)">👶 Bronkiolitis</button>
+    <button class="nb" onclick="showSec('croup',this)">🔔 Croup</button>
+    <button class="nb" onclick="showSec('difteri',this)">🔴 Difteri</button>
+    <button class="nb" onclick="showSec('pertusis',this)">🌀 Pertusis</button>
+    <button class="nb" onclick="showSec('efusi',this)">💧 Efusi Pleura</button>
+    <button class="nb" onclick="showSec('perbandingan',this)">📊 Perbandingan</button>
+    <button class="nb" onclick="showSec('flashcard',this)">🃏 Flashcard</button>
+    <button class="nb" onclick="showSec('kuis',this)">✏️ Kuis MCQ</button>
+  </nav>
+</div>
+
+<div class="main">
+
+<!-- ══════ ASMA ══════ -->
+<div id="asma" class="sec active">
+  <p class="sl">Asma Bronkial pada Anak</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">📋</div> Definisi & Karakteristik Khas</div>
+    <ul class="kl">
+      <li>Penyakit inflamasi kronik saluran napas → <strong>hiperresponsivitas bronkus</strong> → obstruksi reversibel</li>
+      <li><strong>Kronik dan berulang</strong> — gejala datang dan pergi, ada periode bebas gejala</li>
+      <li><strong>Reversibel</strong> — obstruksi membaik spontan atau dengan pengobatan (bronkodilator)</li>
+      <li><strong>Variabilitas</strong> — gejala bervariasi waktu dan intensitas</li>
+      <li>Faktor pencetus: alergen, ISPA virus, olahraga, udara dingin, asap rokok, emosi</li>
+    </ul>
+    <div class="hl"><strong>Gejala Khas Asma:</strong> Batuk berdahak (terutama malam/pagi dini hari) · Napas berbunyi "ngik" (mengi/wheezing) · Sesak napas · Rasa dada tertekan · Berulang · Membaik dengan bronkodilator</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">📊</div> Derajat Serangan Asma Akut</div>
+    <div style="overflow-x:auto">
+      <table class="t">
+        <tr><th>Parameter</th><th style="color:#90EE90">Ringan</th><th style="color:#FFD700">Sedang</th><th style="color:#FF6B6B">Berat</th><th style="color:#FF0000">Mengancam Jiwa</th></tr>
+        <tr><td>Kesadaran</td><td>Sadar, mungkin agitasi</td><td>Agitasi</td><td>Agitasi</td><td>Mengantuk/bingung/letargi</td></tr>
+        <tr><td>Kemampuan bicara</td><td>Kalimat penuh</td><td>Frasa</td><td>Kata-kata saja</td><td>Tidak bisa bicara</td></tr>
+        <tr><td>Retraksi</td><td>Tidak ada / minimal</td><td>Sedang</td><td>Berat, napas cuping hidung</td><td>Gerakan paradoks</td></tr>
+        <tr><td>Mengi</td><td>Akhir ekspirasi</td><td>Seluruh ekspirasi</td><td>Inspirasi + ekspirasi</td><td><strong>Silent chest</strong> 🚨</td></tr>
+        <tr><td>SpO₂ (ruang)</td><td>≥95%</td><td>91–94%</td><td>≤90%</td><td>≤90%</td></tr>
+        <tr><td>PEFR (predicted)</td><td>&gt;70%</td><td>40–70%</td><td>&lt;40%</td><td>Tidak terukur</td></tr>
+        <tr><td>Frekuensi napas</td><td>Meningkat ringan</td><td>Meningkat</td><td>&gt;30/mnt</td><td>Bradipnea/ireguler</td></tr>
+      </table>
+    </div>
+    <div class="hlr">🚨 <strong>Silent Chest</strong> = tidak ada mengi meski sesak berat = aliran udara terlalu sedikit untuk menghasilkan suara = GAGAL NAPAS IMMINENT. Bukan tanda membaik!</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🎯</div> Kontrol Asma (GINA)</div>
+    <table class="t">
+      <tr><th>Kriteria (4 minggu terakhir)</th><th>Terkontrol penuh</th><th>Sebagian terkontrol</th><th>Tidak terkontrol</th></tr>
+      <tr><td>Gejala siang</td><td>≤2×/minggu</td><td colspan="2">&gt;2×/minggu</td></tr>
+      <tr><td>Batasan aktivitas</td><td>Tidak ada</td><td colspan="2">Ada</td></tr>
+      <tr><td>Gejala malam/terbangun</td><td>Tidak ada</td><td colspan="2">Ada</td></tr>
+      <tr><td>Reliever (SABA)</td><td>≤2×/minggu</td><td colspan="2">&gt;2×/minggu</td></tr>
+      <tr><td>Fungsi paru (FEV1/PEFR)</td><td>Normal</td><td colspan="2">&lt;80% predicted</td></tr>
+    </table>
+    <div class="hlg">Sebagian terkontrol = 1–2 parameter bermasalah dalam 1 minggu. Tidak terkontrol = ≥3 parameter bermasalah. Evaluasi ulang tiap 3 bulan.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> Step Terapi Asma (GINA 2023)</div>
+    <table class="t">
+      <tr><th>Step</th><th>Controller (harian)</th><th>Reliever</th></tr>
+      <tr><td><strong>1</strong></td><td>Tidak ada / ICS sangat rendah PRN</td><td>SABA atau ICS+formoterol PRN</td></tr>
+      <tr><td><strong>2</strong></td><td>ICS dosis rendah setiap hari</td><td>SABA PRN</td></tr>
+      <tr><td><strong>3</strong></td><td>ICS sedang ATAU ICS rendah + LABA</td><td>SABA PRN</td></tr>
+      <tr><td><strong>4</strong></td><td>ICS tinggi + LABA</td><td>SABA PRN</td></tr>
+      <tr><td><strong>5</strong></td><td>Tambah: tiotropium / omalizumab / anti-IL5</td><td>SABA PRN</td></tr>
+    </table>
+    <div class="hlb">Step UP bila tidak terkontrol 3 bulan. Step DOWN bila terkontrol penuh 3 bulan (kurangi dosis ICS 25–50%). LABA tidak boleh diberikan tanpa ICS (risiko kematian).</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🚨</div> Tatalaksana Serangan Asma Akut di IGD</div>
+    <div class="step-flow">
+      <div class="step-box s5"><div class="step-num">1</div><div><strong>O₂</strong> nasal kanul/masker → target SpO₂ 94–98%</div></div>
+      <div class="step-box s4"><div class="step-num">2</div><div><strong>SABA nebulisasi</strong>: Salbutamol 2,5 mg (&lt;20 kg) / 5 mg (≥20 kg) setiap <strong>20 menit × 3</strong> (jam pertama). MDI+spacer: 4–8 puff tiap 20 menit.</div></div>
+      <div class="step-box s4"><div class="step-num">3</div><div><strong>Ipratropium bromida</strong> (sedang-berat): nebulisasi 250 µg (&lt;20 kg) / 500 µg (≥20 kg) bersamaan SABA × 3 dosis pertama</div></div>
+      <div class="step-box s2"><div class="step-num">4</div><div><strong>Kortikosteroid sistemik</strong>: Prednison oral 1–2 mg/kgBB/hari (maks 40 mg) × 3–5 hari. Atau metilprednisolon IV 1 mg/kgBB/6 jam bila tidak bisa oral</div></div>
+      <div class="step-box s3"><div class="step-num">5</div><div><strong>Magnesium sulfat IV</strong> 50 mg/kgBB (maks 2 g) dalam 20 menit — berat tidak respons SABA 3×. Relaksasi otot polos bronkus</div></div>
+      <div class="step-box s3"><div class="step-num">6</div><div><strong>ICU / Intubasi</strong>: Silent chest, SpO₂ &lt;90% meski O₂, kesadaran turun, kelelahan otot. Intubasi RSI → target PaCO₂ normal-tinggi (permissive hypercapnia)</div></div>
+    </div>
+    <div class="hl"><strong>Indikasi rawat inap:</strong> SpO₂ &lt;92% setelah 1 jam terapi, serangan berat, tidak ada perbaikan setelah 3 kali nebulisasi, riwayat near-fatal asthma, sosial tidak memungkinkan rawat jalan.</div>
+  </div>
+</div>
+
+<!-- ══════ PNEUMONIA ══════ -->
+<div id="pneumonia" class="sec">
+  <p class="sl">Pneumonia Anak</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔬</div> Klasifikasi & Etiologi</div>
+    <div class="grid2">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Berdasarkan Usia</div>
+        <table class="t">
+          <tr><th>Usia</th><th>Etiologi Tersering</th></tr>
+          <tr><td>&lt;3 minggu</td><td>GBS, E.coli, L.monocytogenes, CMV, HSV</td></tr>
+          <tr><td>3 mgg–3 bln</td><td>RSV, Parainfluenza, <em>C.trachomatis</em> (afebrile)</td></tr>
+          <tr><td>4 bln–5 thn</td><td>RSV, virus lain, <em>S.pneumoniae</em>, <em>H.influenzae</em></td></tr>
+          <tr><td>5–15 thn</td><td><em>M.pneumoniae</em> (atipikal), <em>S.pneumoniae</em>, virus</td></tr>
+        </table>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Tipikal vs Atipikal</div>
+        <table class="t">
+          <tr><th>Aspek</th><th>Tipikal</th><th>Atipikal</th></tr>
+          <tr><td>Patogen</td><td>S.pneumoniae</td><td>Mycoplasma, Chlamydia, virus</td></tr>
+          <tr><td>Onset</td><td>Mendadak</td><td>Gradual</td></tr>
+          <tr><td>Demam</td><td>Tinggi, menggigil</td><td>Subfebris</td></tr>
+          <tr><td>Batuk</td><td>Produktif</td><td>Kering/non-produktif</td></tr>
+          <tr><td>Foto toraks</td><td>Konsolidasi lobar</td><td>Infiltrat interstisial bilateral</td></tr>
+          <tr><td>Antibiotik</td><td>Amoksisilin/penisilin</td><td>Azitromisin/eritromisin</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🏷️</div> Klasifikasi Keparahan WHO (Anak &lt;5 tahun)</div>
+    <div class="sev-grid">
+      <div class="sev-box sv-g">
+        <div class="svn">✅ Pneumonia Ringan</div>
+        Takipnea SAJA (≥60/mnt &lt;2bln · ≥50/mnt 2–12bln · ≥40/mnt 1–5thn)<br>Tanpa retraksi<br>SpO₂ ≥90%<br><strong>→ Rawat jalan</strong><br>Amoksisilin oral 40–45 mg/kgBB/hari ÷ 2 × 5 hari
+      </div>
+      <div class="sev-box sv-o">
+        <div class="svn">⚠️ Pneumonia Berat</div>
+        Retraksi dinding dada bawah (chest indrawing)<br>SpO₂ &lt;90%<br>Tidak bisa minum<br><strong>→ Rawat Inap</strong><br>Amoksisilin IV/IM 50 mg/kgBB/12 jam<br>O₂ bila SpO₂ &lt;90%
+      </div>
+      <div class="sev-box sv-r">
+        <div class="svn">🚨 Sangat Berat</div>
+        + Tanda bahaya umum:<br>• Tidak bisa minum/menyusu<br>• Kejang<br>• Letargi/tidak sadar<br>• Stridor saat istirahat<br><strong>→ Rawat Inap / ICU</strong><br>Ampisilin/penisilin + gentamisin
+      </div>
+    </div>
+    <div class="hlr">⚠️ <strong>Tanda bahaya pada anak &lt;2 bulan:</strong> tidak mau menyusu/minum, kejang, sangat mengantuk, sesak napas berat, demam/hipotermia → RAWAT INAP SEGERA.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> Pilihan Antibiotik Pneumonia</div>
+    <table class="t">
+      <tr><th>Derajat / Usia</th><th>Antibiotik Pilihan</th><th>Durasi</th></tr>
+      <tr><td>Ringan, rawat jalan ≥2 bln</td><td>Amoksisilin 40–45 mg/kgBB/hari oral ÷ 2–3</td><td>5 hari (WHO) / 7 hari</td></tr>
+      <tr><td>Berat, rawat inap</td><td>Amoksisilin IV 50 mg/kgBB/12 jam <strong>atau</strong> Benzilpenisilin 50.000 IU/kgBB/6 jam</td><td>7–10 hari</td></tr>
+      <tr><td>MRSA dicurigai (berat)</td><td>Vancomycin IV ± klindamisin</td><td>10–14 hari</td></tr>
+      <tr><td>Atipikal (Mycoplasma, ≥5 thn)</td><td>Azitromisin 10 mg/kgBB hari 1 → 5 mg/kgBB hari 2–5</td><td>5 hari</td></tr>
+      <tr><td>Neonatus (&lt;3 minggu)</td><td>Ampisilin + gentamisin IV</td><td>10–14 hari</td></tr>
+      <tr><td>Pneumonia aspirasi</td><td>Amoksisilin-klavulanat atau klindamisin</td><td>10–14 hari</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🫁</div> Komplikasi Pneumonia</div>
+    <div class="crit-grid">
+      <div class="crit-box cb-sky">
+        <div class="cn">💧 Parapneumonic Effusion</div>
+        Cairan pleura akibat inflamasi → USG toraks → torakosintesis diagnostik jika perlu. Stadium: eksudatif → fibropurulen → organisasi
+      </div>
+      <div class="crit-box cb-r">
+        <div class="cn">🦠 Empyema Thoracis</div>
+        Pus di rongga pleura. Demam persisten &gt;7 hari meski antibiotik. <strong>Chest tube drainage</strong> + antibiotik IV. Bila gagal: VATS/dekortikasi
+      </div>
+      <div class="crit-box cb-b">
+        <div class="cn">🔵 Pneumatocele</div>
+        Kista udara dalam paru, sering pada pneumonia Staph. aureus. Umumnya resolusi spontan dalam beberapa bulan. Pantau foto toraks serial.
+      </div>
+      <div class="crit-box cb-gold">
+        <div class="cn">⚡ Abses Paru</div>
+        Nekrosis parenkim + kavitas berisi pus. Demam lama + batuk berbau + foto: kavitas dengan air-fluid level. Antibiotik IV panjang ± drainase perkutan
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ TUBERKULOSIS ══════ -->
+<div id="tb" class="sec">
+  <p class="sl">Tuberkulosis (TB) Anak</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">🦠</div> Epidemiologi & Transmisi</div>
+    <ul class="kl">
+      <li>Penyebab: <em>Mycobacterium tuberculosis</em>, aerosol droplet dari sumber (dewasa BTA+)</li>
+      <li>Anak &lt;5 tahun: kontak erat dengan penderita TB dewasa = faktor risiko utama</li>
+      <li>Anak jarang jadi sumber penularan (paucibacillary, batuk tidak kuat)</li>
+      <li>Manifestasi anak berbeda dari dewasa: lebih sering limfadenopati, TB primer, penyebaran hematogen</li>
+    </ul>
+    <div class="hl"><strong>Kontak erat TB BTA+:</strong> tinggal serumah atau kontak &gt;8 jam/hari dengan pasien TB dewasa BTA positif → evaluasi anak SEGERA (TST, foto toraks, gejala).</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">📋</div> Sistem Skoring TB Anak (IDAI)</div>
+    <table class="t">
+      <tr><th>Parameter</th><th>Skor</th></tr>
+      <tr><td>Kontak TB BTA positif</td><td style="font-weight:700;color:var(--m)">3</td></tr>
+      <tr><td>Uji tuberkulin positif (TST ≥10mm, atau ≥5mm pada imunokompromais)</td><td style="font-weight:700;color:var(--m)">3</td></tr>
+      <tr><td>Berat badan/gizi: BB/TB &lt;-2 SD ATAU berat badan tidak naik dalam 2 bulan terakhir meski sudah diintervensi</td><td style="font-weight:700;color:var(--m)">2</td></tr>
+      <tr><td>Demam ≥2 minggu tanpa sebab yang jelas</td><td>1</td></tr>
+      <tr><td>Batuk ≥3 minggu</td><td>1</td></tr>
+      <tr><td>Pembesaran KGB cervical/axilla/inguinal ≥1 cm, jumlah &gt;1, tidak nyeri</td><td>1</td></tr>
+      <tr><td>Foto toraks sugestif TB (pembesaran KGB hilus, konsolidasi segmental/lobar, milier, atelektasis)</td><td>1</td></tr>
+    </table>
+    <div class="crit-grid" style="margin-top:8px">
+      <div class="crit-box cb-r"><div class="cn">🚨 Skor ≥6</div>Probable TB → <strong>Mulai OAT</strong> setelah singkirkan diagnosis lain</div>
+      <div class="crit-box cb-gold"><div class="cn">⚠️ Skor 4–5</div>Mungkin TB → evaluasi lebih lanjut, pertimbangkan OAT bila klinis kuat</div>
+      <div class="crit-box cb-g"><div class="cn">✅ Skor &lt;4</div>Bukan TB → follow up, cari diagnosis lain</div>
+      <div class="crit-box cb-sky"><div class="cn">💡 Catatan</div>Skoring TIDAK untuk TB berat (meningitis, milier, tulang) → langsung mulai OAT + evaluasi diagnostik</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔬</div> Uji Tuberkulin (TST/Mantoux) & IGRA</div>
+    <div class="grid2">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">TST (Mantoux)</div>
+        <ul class="kl">
+          <li>Injeksi PPD 0,1 mL intradermal → baca <strong>48–72 jam</strong> → ukur <strong>indurasi</strong> (bukan eritema)</li>
+          <li><strong>Positif ≥10 mm:</strong> anak tanpa faktor risiko khusus</li>
+          <li><strong>Positif ≥5 mm:</strong> kontak erat TB, HIV, imunokompromais, malnutrisi berat</li>
+          <li>BCG dapat menyebabkan false positive (umumnya &lt;10 mm)</li>
+          <li>False negative: malnutrisi berat, HIV, pasca campak, TB milier/meningitis</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">IGRA (QuantiFERON / T-SPOT)</div>
+        <ul class="kl">
+          <li>Lebih spesifik dari TST (tidak dipengaruhi BCG)</li>
+          <li>Berguna bila: riwayat BCG berulang, TST meragukan</li>
+          <li>Kurang tersedia di layanan primer Indonesia</li>
+          <li>Sama tidak akuratnya pada anak &lt;5 tahun dan imunokompromais</li>
+          <li><strong>Xpert MTB/RIF:</strong> dari dahak/aspirat lambung — cepat 2 jam, deteksi resistensi rifampisin</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> OAT Anak & Regimen</div>
+    <div class="hlp"><strong>Regimen Standar TB Anak: 2RHZ / 4RH</strong> (fase intensif 2 bulan + fase lanjutan 4 bulan)</div>
+    <table class="t" style="margin-top:8px">
+      <tr><th>Obat</th><th>Dosis (mg/kgBB/hari)</th><th>Efek Samping Utama</th></tr>
+      <tr><td><strong>Rifampisin (R)</strong></td><td>10–15 mg/kgBB (maks 600 mg)</td><td>Urin/keringat oranye (normal), hepatotoksik</td></tr>
+      <tr><td><strong>Isoniazid (H)</strong></td><td>7–15 mg/kgBB (maks 300 mg)</td><td>Hepatotoksik, neuropati perifer (suplemen B6)</td></tr>
+      <tr><td><strong>Pirazinamid (Z)</strong></td><td>30–40 mg/kgBB (maks 2 g)</td><td>Hepatotoksik, hiperurisemia</td></tr>
+      <tr><td><strong>Etambutol (E)</strong></td><td>15–25 mg/kgBB (maks 1,5 g)</td><td>Neuritis optik (monitor visus)</td></tr>
+    </table>
+    <div class="crit-grid" style="margin-top:8px">
+      <div class="crit-box cb-b"><div class="cn">TB Ringan-Sedang</div>2RHZ / 4RH (tanpa E). Monitoring: klinis, fungsi hati, berat badan</div>
+      <div class="crit-box cb-r"><div class="cn">TB Berat (Meningitis/Milier/Tulang)</div>2RHZE / 10RH (total 12 bulan). Tambah deksametason untuk meningitis TB (0,4 mg/kgBB/6 jam × 4 minggu taper)</div>
+    </div>
+    <div class="hlg"><strong>Profilaksis INH (ILTB — Infeksi TB Laten):</strong> TST positif + foto toraks normal + tanpa gejala = INFEKSI LATEN. Isoniazid 10 mg/kgBB/hari × <strong>6 bulan</strong>. Efektivitas: turunkan risiko TB aktif 60–90%.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🧠</div> TB Meningitis — Kegawatan</div>
+    <ul class="kl">
+      <li>Komplikasi TB paling mematikan pada anak, sering usia &lt;5 tahun</li>
+      <li><strong>Stadium I:</strong> demam, iritabel, sakit kepala, tanpa gangguan kesadaran</li>
+      <li><strong>Stadium II:</strong> tanda meningeal (kaku kuduk, Kernig, Brudzinski), gangguan saraf kranial, penurunan kesadaran ringan</li>
+      <li><strong>Stadium III:</strong> koma, hemiplegia/paraplegia, status epileptikus, decorticate/decerebrate</li>
+    </ul>
+    <div class="grid2" style="margin-top:8px">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">CSS TB Meningitis</div>
+        <ul class="kl">
+          <li>Jernih/xantokrom</li>
+          <li>Leukosit 100–500, limfosit dominan</li>
+          <li>Protein <strong>sangat tinggi</strong> (&gt;100–400 mg/dL)</li>
+          <li>Glukosa <strong>sangat rendah</strong> (CSS/plasma &lt;0,5)</li>
+          <li>BTA kadang positif</li>
+          <li>Xpert MTB/RIF dari CSS: lebih sensitif</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Tatalaksana</div>
+        <ul class="kl">
+          <li>OAT: <strong>2RHZE / 10RH</strong></li>
+          <li>Deksametason IV 0,4 mg/kgBB/6 jam × 4 minggu → taper 4 minggu</li>
+          <li>Manajemen TIK: posisi head-up 30°, mannitol bila perlu</li>
+          <li>Monitor: hidrosefalus (perlu VP shunt)</li>
+          <li>Prognosis stadium I jauh lebih baik dari III</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ BRONKIOLITIS ══════ -->
+<div id="bronkiolitis" class="sec">
+  <p class="sl">Bronkiolitis Akut</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">👶</div> Definisi & Epidemiologi</div>
+    <ul class="kl">
+      <li>Infeksi saluran napas bawah akut pada <strong>anak &lt;2 tahun</strong> (paling sering &lt;6 bulan)</li>
+      <li>Inflamasi bronkiolus → edema, nekrosis epitel, produksi mukus berlebih → <strong>obstruksi</strong></li>
+      <li>Penyebab: <strong>RSV (Respiratory Syncytial Virus)</strong> tersering (50–80%), Rhinovirus, Parainfluenza, Adenovirus, Bocavirus</li>
+      <li>Musim: musim hujan/dingin, puncak November–Maret (belahan bumi utara)</li>
+      <li>Faktor risiko berat: usia &lt;3 bulan, prematuritas, penyakit jantung/paru bawaan, imunodefisiensi</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🩺</div> Diagnosis Klinis</div>
+    <div class="hlb">Bronkiolitis = diagnosis KLINIS. Tidak perlu pemeriksaan rutin (lab/rontgen).</div>
+    <div class="grid2" style="margin-top:8px">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Klinis Khas</div>
+        <ul class="kl">
+          <li>Didahului ISPA 2–4 hari (pilek, demam ringan)</li>
+          <li>Berkembang menjadi: batuk, takipnea, retraksi</li>
+          <li><strong>Mengi (wheezing)</strong> dan/atau <strong>krepitasi</strong> difus saat auskultasi</li>
+          <li>Hiperinflasi dada (barrel chest sementara)</li>
+          <li>Feeding difficulty (tidak mau menyusu)</li>
+          <li>Puncak keparahan hari ke 3–5</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Tanda Berat / Rawat Inap</div>
+        <ul class="kl">
+          <li>SpO₂ &lt;92% di udara ruangan</li>
+          <li>Takipnea berat (&gt;70/mnt)</li>
+          <li>Retraksi berat/apnea</li>
+          <li>Tidak mau minum (dehidrasi)</li>
+          <li>Usia &lt;3 bulan atau prematur</li>
+          <li>Penyakit dasar (PJB, BPD, imunodefisiensi)</li>
+          <li>Orang tua tidak mampu monitor di rumah</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> Tatalaksana Bronkiolitis — Pendekatan Suportif</div>
+    <div class="hlg">Bronkiolitis = penyakit <strong>self-limited</strong>. Terapi utama adalah SUPORTIF. Tidak ada bukti manfaat bronkodilator, steroid, antibiotik, atau nebulisasi hipertonik secara rutin.</div>
+    <div class="step-flow">
+      <div class="step-box s5"><div class="step-num">1</div><div><strong>O₂ supplemental</strong> bila SpO₂ &lt;92% → target ≥94%. Nasal kanul, HFNC bila distres berat</div></div>
+      <div class="step-box s1"><div class="step-num">2</div><div><strong>Hidrasi adekuat</strong> — ASI/PASI sering tapi sedikit-sedikit. NGT bila tidak bisa minum. IV bila tanda dehidrasi</div></div>
+      <div class="step-box s2"><div class="step-num">3</div><div><strong>Posisi</strong> head-of-bed 30–45°. Bersihkan hidung (nasal suction) sebelum menyusu untuk bantu minum</div></div>
+      <div class="step-box s4"><div class="step-num">4</div><div><strong>Monitoring ketat</strong>: SpO₂, frekuensi napas, feeding, apnea — terutama bayi &lt;3 bulan</div></div>
+      <div class="step-box s3"><div class="step-num">5</div><div><strong>Epinefrin racemic nebulisasi</strong> (IGD saja, bukan rawat jalan): dapat mengurangi distres jangka pendek, tapi tidak mengurangi rawat inap. Dosis: 0,05 mL/kgBB epinefrin 1:1000 dalam 3 mL NaCl</div></div>
+    </div>
+    <div class="hlr">⚠️ <strong>TIDAK terbukti bermanfaat:</strong> Salbutamol/bronkodilator (AAP 2014: jangan digunakan), kortikosteroid sistemik, antibiotik (kecuali ada bukti infeksi bakteri sekunder), nebulisasi NaCl hipertonik (1 meta-analisis menunjukkan manfaat terbatas). Pemantauan apnea penting pada bayi &lt;2 bulan.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🛡️</div> Pencegahan — Palivizumab</div>
+    <ul class="kl">
+      <li>Palivizumab: antibodi monoklonal anti-RSV, injeksi IM bulanan selama musim RSV</li>
+      <li><strong>Indikasi:</strong> prematuritas &lt;35 minggu usia gestasi (pertama 2 tahun kehidupan), penyakit jantung bawaan hemodinamik bermakna, displasia bronkopulmonal (BPD), imunodefisiensi berat</li>
+      <li>Reduksi rawat inap: ~50%. Mahal — tidak rutin diberikan semua bayi</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════ CROUP ══════ -->
+<div id="croup" class="sec">
+  <p class="sl">Croup (Laringotrakeobronkitis Akut)</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔔</div> Definisi & Etiologi</div>
+    <ul class="kl">
+      <li>Sindrom klinis: <strong>stridor inspirasi + batuk menggonggong (barking cough)</strong> + suara serak + distres napas</li>
+      <li>Akibat inflamasi subglotis (subglottic edema) → penyempitan jalan napas atas</li>
+      <li>Usia: <strong>6 bulan – 3 tahun</strong>, puncak 2 tahun</li>
+      <li>Etiologi: <strong>Parainfluenza virus tipe 1 dan 3</strong> (75%), RSV, Influenza, Adenovirus</li>
+      <li>Musim: gugur/awal musim dingin (Parainfluenza tipe 1 musiman)</li>
+    </ul>
+    <div class="hl"><strong>Triad Croup:</strong> Stridor inspirasi + Batuk menggonggong "seperti anjing" + Suara serak (disfonia). Anak tampak gelisah tapi bisa nyaman di pelukan orang tua. Berbeda dari epiglotitis (anak tampak toksik, tidak mau berbaring).</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">📊</div> Skor Westley — Penilaian Keparahan Croup</div>
+    <table class="t">
+      <tr><th>Parameter</th><th>Skor</th></tr>
+      <tr><td>Stridor: tidak ada (0), saat agitasi (1), istirahat (2)</td><td>0–2</td></tr>
+      <tr><td>Retraksi: tidak ada (0), ringan (1), sedang (2), berat (3)</td><td>0–3</td></tr>
+      <tr><td>Saturasi O₂: &gt;95% (0), 92–95% (1), &lt;92% (4)</td><td>0–4</td></tr>
+      <tr><td>Sianosis: tidak ada (0), agitasi (4), istirahat (5)</td><td>0–5</td></tr>
+      <tr><td>Kesadaran: normal (0), disorientasi (5)</td><td>0–5</td></tr>
+    </table>
+    <div class="sev-grid" style="margin-top:8px">
+      <div class="sev-box sv-g"><div class="svn">Ringan (0–2)</div>Batuk gonggong sesekali, tidak ada stridor istirahat, tidak ada retraksi. Rawat jalan. Deksametason oral sekali.</div>
+      <div class="sev-box sv-o"><div class="svn">Sedang (3–7)</div>Stridor saat istirahat (+retraksi ringan). Rawat inap. Deksametason + nebulisasi epinefrin.</div>
+      <div class="sev-box sv-r"><div class="svn">Berat (≥8)</div>Distres berat, sianosis, kesadaran turun. ICU. Deksametason IV + nebulisasi epinefrin berulang + siap intubasi.</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> Tatalaksana Croup</div>
+    <div class="step-flow">
+      <div class="step-box s1"><div class="step-num">1</div><div><strong>Tenangkan anak</strong> — agitasi memperburuk obstruksi. Biarkan dalam posisi nyaman di pangkuan orang tua. Hindari prosedur yang membuat anak menangis berlebihan</div></div>
+      <div class="step-box s2"><div class="step-num">2</div><div><strong>Deksametason oral/IM/IV 0,6 mg/kgBB</strong> (maks 8–16 mg) — DOSIS TUNGGAL. Efektif dalam 30 menit, manfaat bertahan 24–48 jam. Untuk SEMUA derajat (ringan hingga berat). Prednisolon 1 mg/kgBB × 3 hari sebagai alternatif oral</div></div>
+      <div class="step-box s3"><div class="step-num">3</div><div><strong>Nebulisasi epinefrin racemic</strong> (sedang-berat): 0,5 mL epinefrin 2,25% dalam 3 mL NaCl 0,9% ATAU epinefrin 1:1000 0,5 mL/kgBB (maks 5 mL). Onset cepat (10–30 menit), durasi 1–2 jam. Observasi minimal 2 jam setelah nebulisasi (rebound effect)</div></div>
+      <div class="step-box s4"><div class="step-num">4</div><div><strong>O₂ supplemental</strong> bila SpO₂ &lt;92%. Heliox (70% helium + 30% O₂) dapat membantu pada kasus berat</div></div>
+      <div class="step-box s5"><div class="step-num">5</div><div><strong>Intubasi</strong> bila obstruksi berat + gagal konservatif. Pilih pipa ET 0,5–1 nomor lebih kecil dari biasanya (karena subglotis menyempit). Siapkan ahli bedah THT</div></div>
+    </div>
+    <div class="hlr">⚠️ <strong>Beda Croup vs Epiglotitis:</strong> Croup = batuk gonggong + stridor, tidak toksik, bisa berbaring. Epiglotitis = demam tinggi mendadak, toxic appearance, tripod position (condong ke depan), ludah menetes, TIDAK ADA batuk gonggong, JANGAN coba visualisasi laring tanpa persiapan intubasi darurat!</div>
+  </div>
+</div>
+
+<!-- ══════ DIFTERI ══════ -->
+<div id="difteri" class="sec">
+  <p class="sl">Difteri</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔴</div> Definisi & Patogenesis</div>
+    <ul class="kl">
+      <li>Penyebab: <em>Corynebacterium diphtheriae</em>, toksigenik (mengandung fag β), gram positif</li>
+      <li>Transmisi: droplet, kontak langsung dengan lesi</li>
+      <li>Inkubasi: 2–5 hari</li>
+      <li><strong>Patogenesis:</strong> bakteri kolonisasi lokal → produksi eksotoksin → menyebar hematogen → miokarditis + neuritis</li>
+      <li>Toksin difteri: <strong>fragmentasi ADP-ribosylation</strong> → inaktivasi EF-2 (elongation factor 2) → penghentian sintesis protein → kematian sel</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🩺</div> Manifestasi Klinis</div>
+    <div class="grid2">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Gejala Lokal (Faring/Tonsil)</div>
+        <ul class="kl">
+          <li>Demam ringan-sedang, nyeri tenggorok</li>
+          <li><strong>Pseudomembran abu-abu</strong>: melekat kuat di tonsil/faring, <strong>BERDARAH bila dicabut</strong> (membedakan dari tonsilitis biasa)</li>
+          <li>Ekstensi ke laring → suara serak, stridor, croup-like</li>
+          <li><strong>Bull neck:</strong> pembengkakan leher masif (edema jaringan lunak + limfadenopati) pada kasus berat</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Komplikasi Sistemik</div>
+        <ul class="kl">
+          <li><strong>Miokarditis:</strong> terjadi hari ke 7–14, EKG: blok AV, aritmia. Penyebab kematian tersering</li>
+          <li><strong>Neuropati:</strong> palatal palsy (regurgitasi hidung), diplegia okular (diplopia), paralisis motorik perifer</li>
+          <li>Obstruksi jalan napas (ekstensi pseudomembran ke laring)</li>
+          <li>Paralisis diafragma (minggu 3–7, bisa fatal)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hlr">⚠️ <strong>Jangan cabut pseudomembran paksa</strong> — akan berdarah dan mungkin menyebar. Isolasi ketat. Monitor EKG kontinu (miokarditis).</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> Tatalaksana Difteri</div>
+    <div class="step-flow">
+      <div class="step-box s3"><div class="step-num">1</div><div><strong>ISOLASI KETAT</strong> — hubungi dinas kesehatan, kewajiban lapor</div></div>
+      <div class="step-box s3"><div class="step-num">2</div><div><strong>ADS (Anti-Difteri Serum)</strong> — sesegera mungkin, SEBELUM hasil kultur. Dosis berdasarkan derajat keparahan:<br>• Ringan (faring/tonsil ≤2 hari): 20.000 IU IM/IV<br>• Sedang (faring/tonsil &gt;2 hari atau laring): 40.000 IU IV<br>• Berat/bull neck: 80.000–120.000 IU IV<br><em>Lakukan uji sensitivitas (skin test) sebelum pemberian</em></div></div>
+      <div class="step-box s4"><div class="step-num">3</div><div><strong>Antibiotik:</strong> Penisilin prokain IM 25.000 IU/kgBB/12 jam × 14 hari ATAU Eritromisin 40 mg/kgBB/hari ÷ 4 × 14 hari. Tujuan: eradikasi bakteri (bukan antitoksin)</div></div>
+      <div class="step-box s2"><div class="step-num">4</div><div><strong>Monitor ketat:</strong> EKG harian (miokarditis), fungsi menelan (palatal palsy), fungsi pernapasan (paralisis diafragma). Bed rest total pada miokarditis</div></div>
+      <div class="step-box s1"><div class="step-num">5</div><div><strong>Vaksinasi pasca penyembuhan</strong> — infeksi difteri tidak memberikan imunitas permanen. Berikan DPT lengkap setelah sembuh</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ PERTUSIS ══════ -->
+<div id="pertusis" class="sec">
+  <p class="sl">Pertusis (Whooping Cough)</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">🌀</div> Definisi & Patogenesis</div>
+    <ul class="kl">
+      <li>Penyebab: <em>Bordetella pertussis</em>, gram negatif, HANYA menginfeksi manusia</li>
+      <li>Transmisi: droplet, sangat menular (R₀ = 12–17), inkubasi 7–21 hari</li>
+      <li>Patogenesis: toksin pertussis → penekanan imunitas + stimulasi leukositosis + gangguan refleks batuk</li>
+      <li>Paling mematikan pada <strong>bayi &lt;6 bulan</strong> (apnea, tidak ada whoop)</li>
+    </ul>
+    <div class="hl"><strong>100-day cough:</strong> durasi total pertusis 6–12 minggu (~100 hari). Nama lain: "whooping cough" (dari suara inspirasi setelah paroksismal).</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">📋</div> 3 Stadium Pertusis</div>
+    <div class="sev-grid">
+      <div class="sev-box sv-b">
+        <div class="svn">1️⃣ Kataral (1–2 mgg)</div>
+        Mirip ISPA biasa: pilek, batuk ringan, demam rendah.<br><strong>Paling infeksius!</strong><br>Sering tidak terdiagnosis = vektor penularan tidak disadari
+      </div>
+      <div class="sev-box sv-o">
+        <div class="svn">2️⃣ Paroksismal (2–6 mgg)</div>
+        Batuk serangan beruntun → <strong>WHOOP</strong> (tarikan napas panjang keras) → bisa diikuti muntah.<br>Sianosis, mata merah/berdarah, wajah memerah<br>Bayi: APNEA (tidak ada whoop!)
+      </div>
+      <div class="sev-box sv-g">
+        <div class="svn">3️⃣ Konvalesens (mgg–bulan)</div>
+        Frekuensi dan beratnya serangan berkurang bertahap.<br>Batuk bisa bertahan berbulan-bulan.<br>ISPA berikutnya bisa memicu kambuh
+      </div>
+    </div>
+    <div class="hlr">⚠️ <strong>Bayi &lt;6 bulan dengan pertusis:</strong> tidak ada whoop karena otot inspirasi lemah → manifestasi: APNEA, bradikardi, sianosis setelah batuk paroksismal. Sangat mematikan. Rawat ICU.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔬</div> Diagnosis & Lab Khas</div>
+    <div class="grid2">
+      <div>
+        <ul class="kl">
+          <li>Kultur nasofaring: gold standard, tapi lambat dan sensitivitas turun setelah fase kataral</li>
+          <li>PCR nasofaring: lebih cepat dan sensitif, gold standard praktis</li>
+          <li><strong>Leukositosis dengan limfositosis absolut (15.000–100.000/mm³)</strong> — khas pertusis!</li>
+          <li>Foto toraks: "shaggy heart border" (infiltrat perihilar), atelektasis</li>
+          <li>Kriteria WHO: batuk ≥21 hari + ≥1: paroksismal, whoop, post-tussive vomiting, apnea pada bayi</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Komplikasi</div>
+        <ul class="kl">
+          <li>Pneumonia (bakteri sekunder) — penyebab kematian tersering</li>
+          <li>Ensefalopati pertusis (hipoksia, toksin)</li>
+          <li>Perdarahan subkonjungtiva/epistaksis (akibat batuk keras)</li>
+          <li>Hernia inguinal (tekanan batuk)</li>
+          <li>Hipertensi pulmonal pada bayi (sangat berbahaya)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">💊</div> Tatalaksana Pertusis</div>
+    <table class="t">
+      <tr><th>Aspek</th><th>Detail</th></tr>
+      <tr><td><strong>Antibiotik (kuratif + kontrol penularan)</strong></td><td>Azitromisin: 10 mg/kgBB hari 1 → 5 mg/kgBB hari 2–5 (pilihan utama, terutama &lt;1 bulan). Eritromisin 40–50 mg/kgBB/hari ÷ 4 × 14 hari. Kotrimoksazol (bila alergi makrolid): TMP 8 mg/kgBB/hari ÷ 2 × 14 hari</td></tr>
+      <tr><td><strong>Efektivitas antibiotik</strong></td><td>Efektif jika diberikan fase KATARAL (eradikasi bakteri, kurangi penularan). Fase paroksismal: antibiotik tidak mengubah klinis tapi tetap diberikan (hentikan penularan)</td></tr>
+      <tr><td><strong>Rawat inap</strong></td><td>Bayi &lt;6 bulan, apnea, bradikardi, SpO₂ turun, tidak bisa minum, pneumonia</td></tr>
+      <tr><td><strong>Profilaksis kontak</strong></td><td>Azitromisin profilaksis untuk semua kontak rumah tangga dalam 21 hari paparan, terutama bayi dan ibu hamil</td></tr>
+      <tr><td><strong>Pencegahan</strong></td><td>Vaksin DPT (imunisasi dasar 2-3-4 bulan + booster 18 bulan). Tdap untuk remaja/dewasa (cocoon strategy). Vaksin Tdap ibu hamil trimester 3: melindungi neonatus sebelum vaksin pertama</td></tr>
+    </table>
+  </div>
+</div>
+
+<!-- ══════ EFUSI PLEURA ══════ -->
+<div id="efusi" class="sec">
+  <p class="sl">Efusi Pleura & Empyema pada Anak</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">💧</div> Definisi & Etiologi</div>
+    <ul class="kl">
+      <li><strong>Efusi pleura:</strong> akumulasi cairan abnormal di rongga pleura (&gt;15–20 mL)</li>
+      <li>Rongga pleura normal: 0,1–0,2 mL/kgBB cairan pleura untuk lubrikasi</li>
+    </ul>
+    <div class="grid2" style="margin-top:8px">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Transudat (protein &lt;30 g/L)</div>
+        <ul class="kl">
+          <li>Gagal jantung kongestif</li>
+          <li>Sindrom nefrotik (albumin rendah)</li>
+          <li>Sirosis hati</li>
+          <li>Hipoalbuminemia berat</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Eksudat (protein ≥30 g/L, atau Kriteria Light)</div>
+        <ul class="kl">
+          <li><strong>Pneumonia (parapneumonic)</strong> — paling sering pada anak</li>
+          <li>TB pleura</li>
+          <li>Keganasan (limfoma)</li>
+          <li>Kollagen vaskular (LES)</li>
+          <li>Chylothorax (limfe → post operasi jantung)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔬</div> Kriteria Light — Eksudat vs Transudat</div>
+    <div class="hlp">Eksudat bila memenuhi ≥1 kriteria Light:</div>
+    <ul class="kl" style="margin-top:8px">
+      <li>Protein cairan pleura / protein serum &gt; <strong>0,5</strong></li>
+      <li>LDH cairan pleura / LDH serum &gt; <strong>0,6</strong></li>
+      <li>LDH cairan pleura &gt; <strong>2/3 batas atas normal LDH serum</strong></li>
+    </ul>
+    <div class="hlg">Bila memenuhi ≥1 = eksudat. Tidak memenuhi satupun = transudat. Sensitivitas 98%, spesifisitas 83%.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🩺</div> Klinis, Diagnosis & Imaging</div>
+    <div class="grid2">
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Klinis</div>
+        <ul class="kl">
+          <li>Sesak napas bertahap</li>
+          <li>Nyeri dada pleuritik (tajam, memburuk saat napas dalam/batuk)</li>
+          <li>Perkusi: <strong>redup</strong> sisi efusi</li>
+          <li>Suara napas: <strong>melemah/menghilang</strong> sisi efusi</li>
+          <li>Fremitus taktil: <strong>menurun</strong></li>
+          <li>Trakea deviasi: ke <strong>sisi berlawanan</strong> (bila efusi besar)</li>
+        </ul>
+      </div>
+      <div>
+        <div style="font-size:.73rem;font-weight:700;color:var(--m);margin-bottom:4px">Pemeriksaan</div>
+        <ul class="kl">
+          <li><strong>Foto toraks:</strong> opasitas homogen, meniskus (meniscus sign), mediastinum shift</li>
+          <li><strong>USG toraks:</strong> lebih sensitif dari foto toraks, panduan torakosintesis</li>
+          <li><strong>CT Scan:</strong> bila kompleks (fibropurulen, loculated)</li>
+          <li>Analisis cairan pleura: warna, bau, protein, LDH, glukosa, sel, kultur, BTA, pH</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🏥</div> Empyema Thoracis — Stadium & Tatalaksana</div>
+    <table class="t">
+      <tr><th>Stadium</th><th>Karakteristik</th><th>Tatalaksana</th></tr>
+      <tr><td><strong>I — Eksudatif</strong></td><td>Cairan jernih, protein rendah, leukosit &lt;10.000, pH &gt;7,2, LDH &lt;1000, glukosa normal</td><td>Antibiotik IV saja (tanpa drainase rutin)</td></tr>
+      <tr><td><strong>II — Fibropurulen</strong></td><td>Cairan keruh/pus, leukosit tinggi, pH &lt;7,2, LDH &gt;1000, glukosa &lt;60, septasi/lokulasi mulai</td><td>Chest tube drainase + antibiotik IV. VATS bila gagal</td></tr>
+      <tr><td><strong>III — Organisasi/Kronisasi</strong></td><td>Pleura menebal, fibrin tebal, paru terperangkap (trapped lung)</td><td>Dekortikasi (VATS/torakotomi)</td></tr>
+    </table>
+    <div class="hlg"><strong>Antibiotik empyema:</strong> Amoksisilin-klavulanat IV + metronidazol (empyema post-pneumonia). Penisilin + gentamisin bila neonatus. Vankomisin bila curiga MRSA. Durasi: IV minimal 2 minggu → oral 2–4 minggu.</div>
+  </div>
+</div>
+
+<!-- ══════ PERBANDINGAN ══════ -->
+<div id="perbandingan" class="sec">
+  <p class="sl">Perbandingan & Ringkasan Respirologi</p>
+  <div class="card">
+    <div class="ctitle"><div class="icon">📊</div> Perbandingan Penyakit Napas Atas — Croup vs Epiglotitis vs Pertusis</div>
+    <div style="overflow-x:auto">
+      <table class="t">
+        <tr><th>Aspek</th><th>Croup</th><th>Epiglotitis</th><th>Pertusis</th></tr>
+        <tr><td>Usia</td><td>6 bln–3 thn</td><td>3–7 thn (lebih dewasa)</td><td>Semua, terberat &lt;6 bln</td></tr>
+        <tr><td>Patogen</td><td>Parainfluenza virus</td><td><em>H. influenzae</em> tipe b</td><td><em>Bordetella pertussis</em></td></tr>
+        <tr><td>Onset</td><td>Gradual (1–3 hari)</td><td>Mendadak (jam)</td><td>Bertahap (1–2 minggu)</td></tr>
+        <tr><td>Demam</td><td>Ringan</td><td>Tinggi (40°C), toksik</td><td>Ringan (fase kataral)</td></tr>
+        <tr><td>Batuk</td><td><strong>Gonggong (barking)</strong></td><td>Tidak ada / minimal</td><td><strong>Paroksismal + whoop</strong></td></tr>
+        <tr><td>Stridor</td><td>Inspirasi, ringan-berat</td><td>Inspirasi, berat</td><td>Tidak ada</td></tr>
+        <tr><td>Posisi</td><td>Nyaman di pangkuan</td><td><strong>Tripod position</strong>, menolak berbaring</td><td>Normal</td></tr>
+        <tr><td>Air liur</td><td>Normal</td><td><strong>Drooling</strong> (tidak bisa menelan)</td><td>Normal</td></tr>
+        <tr><td>Foto toraks/laring</td><td>Steeple sign (subglotis)</td><td>Thumbprint sign (epiglotis)</td><td>Shaggy heart border</td></tr>
+        <tr><td>Lab khas</td><td>Tidak khas</td><td>Leukositosis PMN</td><td><strong>Limfositosis masif</strong></td></tr>
+        <tr><td>Terapi utama</td><td>Deksametason + epinefrin nebulisasi</td><td>Intubasi cepat + Seftriakson IV</td><td>Azitromisin / Eritromisin</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🦠</div> Perbandingan Difteri vs Pertusis</div>
+    <table class="t">
+      <tr><th>Aspek</th><th>Difteri</th><th>Pertusis</th></tr>
+      <tr><td>Patogen</td><td><em>Corynebacterium diphtheriae</em></td><td><em>Bordetella pertussis</em></td></tr>
+      <tr><td>Inkubasi</td><td>2–5 hari</td><td>7–21 hari</td></tr>
+      <tr><td>Gejala utama</td><td>Nyeri tenggorok + pseudomembran abu-abu</td><td>Batuk paroksismal + whoop + post-tussive vomiting</td></tr>
+      <tr><td>Membran</td><td>Pseudomembran tonsil/faring, berdarah dicabut</td><td>Tidak ada</td></tr>
+      <tr><td>Lab khas</td><td>Pewarnaan Albert (metachromatic granule)</td><td>Limfositosis masif (15.000–100.000)</td></tr>
+      <tr><td>Komplikasi utama</td><td>Miokarditis (kematian) + neuritis</td><td>Pneumonia + ensefalopati + hipertensi pulmonal bayi</td></tr>
+      <tr><td>Terapi spesifik</td><td>ADS (Anti-Difteri Serum) + penisilin/eritromisin</td><td>Azitromisin/eritromisin</td></tr>
+      <tr><td>Pencegahan</td><td>DPT (DT untuk difteri tetanus)</td><td>DPT + Tdap booster + Tdap ibu hamil</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">👶</div> Perbandingan Bronkiolitis vs Asma pada Bayi</div>
+    <table class="t">
+      <tr><th>Aspek</th><th>Bronkiolitis</th><th>Asma (Episode Pertama)</th></tr>
+      <tr><td>Usia</td><td>&lt;2 tahun (puncak &lt;6 bln)</td><td>Biasanya &gt;2 tahun (tapi bisa lebih muda)</td></tr>
+      <tr><td>Penyebab</td><td>Viral (RSV, Rhinovirus)</td><td>Alergen + viral trigger, inflamasi eosinofilik</td></tr>
+      <tr><td>Kejadian</td><td>Pertama kali atau jarang berulang</td><td>Berulang (recurrent wheezing)</td></tr>
+      <tr><td>Riwayat atopi</td><td>Tidak wajib</td><td>Sering ada (DA, rhinitis, riwayat keluarga)</td></tr>
+      <tr><td>Respons bronkodilator</td><td>Minimal / tidak respons</td><td>Respons baik (reversibel)</td></tr>
+      <tr><td>Demam</td><td>Ada (viral prodrome)</td><td>Biasanya tidak (atau ringan saat trigger virus)</td></tr>
+      <tr><td>Terapi</td><td>Suportif (O₂, hidrasi) — TANPA bronkodilator rutin</td><td>SABA + ICS bila kontrol buruk</td></tr>
+    </table>
+    <div class="hl"><strong>Recurrent Wheezing:</strong> ≥3 episode mengi sebelum usia 3 tahun dengan/tanpa atopi → pertimbangkan asma. Bila atopi (+) + keluarga asma → risiko asma persisten tinggi.</div>
+  </div>
+
+  <div class="card">
+    <div class="ctitle"><div class="icon">🔑</div> Poin Kunci Ujian PPDS Respirologi</div>
+    <div class="crit-grid">
+      <div class="crit-box cb-r"><div class="cn">🚨 Silent Chest</div>BUKAN membaik. Aliran terlalu sedikit untuk mengi. Gagal napas imminent. Siap intubasi.</div>
+      <div class="crit-box cb-b"><div class="cn">🔔 Croup vs Epiglotitis</div>Croup: batuk gonggong + stridor. Epiglotitis: tripod + drooling + tidak ada batuk gonggong → JANGAN visualisasi tanpa siap intubasi.</div>
+      <div class="crit-box cb-sky"><div class="cn">👶 Pertusis Bayi</div>Tidak ada whoop. Manifestasi: APNEA + bradikardi. Rawat ICU. Vaksin Tdap ibu hamil trimester 3 = pencegahan.</div>
+      <div class="crit-box cb-gold"><div class="cn">🦠 TB Skor ≥6</div>Mulai OAT. ILTB (skor &lt;4 + TST+ + foto normal) = profilaksis INH 6 bulan. TB meningitis = 2RHZE/10RH + deksametason.</div>
+      <div class="crit-box cb-g"><div class="cn">🔴 ADS Difteri</div>Berikan SEGERA tanpa tunggu kultur. Dosis sesuai derajat. Lakukan uji sensitivitas kulit dulu. Monitor EKG (miokarditis).</div>
+      <div class="crit-box cb-b"><div class="cn">💧 Empyema</div>Stadium II (fibropurulen, pH &lt;7,2): chest tube + antibiotik. Stadium III (organisasi): dekortikasi. Stadium I: antibiotik saja.</div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════ FLASHCARD ══════ -->
+<div id="flashcard" class="sec">
+  <p class="sl">Flashcard – Klik untuk balik</p>
+  <div class="chips" id="fcChips"></div>
+  <div class="fc-info">Kartu <span id="fcCur">1</span>/<span id="fcTot">1</span> · <span id="fcTopic" style="color:var(--m);font-weight:600">Semua</span></div>
+  <div class="fc-progress-bar"><div class="fc-progress-fill" id="fcFill"></div></div>
+  <div class="flashcard-wrap">
+    <div class="flashcard" id="fc-el" onclick="flipCard()">
+      <div class="fc-face fc-front"><div class="fc-lbl">📌 Pertanyaan</div><div class="fc-q" id="fcQ">–</div><div class="fc-hint">Klik untuk lihat jawaban 👆</div></div>
+      <div class="fc-face fc-back"><div class="fc-lbl">✅ Jawaban</div><div class="fc-a" id="fcA">–</div><div class="fc-hint">Klik untuk balik</div></div>
+    </div>
+  </div>
+  <div class="fc-ctrls">
+    <button class="btn btn-s" onclick="prevCard()">← Sebelumnya</button>
+    <button class="btn btn-p" onclick="shuffleCards()">🔀 Acak</button>
+    <button class="btn btn-p" onclick="nextCard()">Selanjutnya →</button>
+  </div>
+</div>
+
+<!-- ══════ KUIS ══════ -->
+<div id="kuis" class="sec">
+  <div id="quizSetup">
+    <p class="sl">Kuis Respirologi Anak – 30 Soal</p>
+    <div class="mode-sel">
+      <div class="mode-btn active" onclick="selMode('belajar',this)"><div class="mi">📖</div><div class="mn2">Mode Belajar</div><div class="md">Ada penjelasan langsung</div></div>
+      <div class="mode-btn" onclick="selMode('ujian',this)"><div class="mi">⏱️</div><div class="mn2">Mode Ujian</div><div class="md">Timer 90 detik/soal</div></div>
+    </div>
+    <button class="btn btn-p btn-full" onclick="startQuiz()">🚀 Mulai Kuis</button>
+  </div>
+  <div id="quizGame" style="display:none">
+    <div class="qhdr">
+      <div style="font-size:.76rem;color:var(--tm)">Soal <span id="qCur">1</span>/<span id="qTot">30</span></div>
+      <div class="qtimer" id="qtimer" style="display:none">90</div>
+    </div>
+    <div id="qCont"></div>
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <button class="btn btn-s" id="btnNext" onclick="nextQ()" style="display:none;flex:1">Soal Berikutnya →</button>
+      <button class="btn btn-p" id="btnFin" onclick="finishQuiz()" style="display:none;flex:1">Selesai & Hasil</button>
+    </div>
+  </div>
+  <div id="quizResult" style="display:none">
+    <div class="qresult">
+      <div class="remoji" id="remoji">🏆</div>
+      <div class="rscore" id="rscore">0/30</div>
+      <div class="rlabel" id="rlabel">–</div>
+      <button class="btn btn-p" onclick="resetQuiz()" style="margin-top:8px">🔄 Ulangi</button>
+    </div>
+    <div id="reviewCont" style="margin-top:14px"></div>
+  </div>
+</div>
+
+</div>
+<script>
+const FLASHCARDS = [
+  {topic:'Asma',q:'Apa yang dimaksud silent chest dan mengapa berbahaya?',a:'Silent chest = tidak terdengar mengi/suara napas saat auskultasi meski sesak napas sangat berat. BUKAN tanda membaik. Aliran udara terlalu sedikit untuk menghasilkan turbulensi → tidak ada suara. Tanda GAGAL NAPAS IMMINENT. Tanda bahaya lain: sianosis, tidak bisa bicara, kesadaran menurun, kelelahan otot napas. Tindakan: O₂ tinggi + SABA + kortikosteroid IV + Mg sulfat IV + siap intubasi RSI segera.'},
+  {topic:'Asma',q:'Sebutkan langkah tatalaksana serangan asma berat di IGD!',a:'1) O₂ target SpO₂ 94–98%. 2) SABA nebulisasi (salbutamol) tiap 20 menit × 3 (jam pertama). 3) Ipratropium bromida bersamaan SABA × 3 dosis pertama. 4) Kortikosteroid: prednison oral atau metilprednisolon IV 1 mg/kgBB/6 jam. 5) Mg sulfat IV 50 mg/kgBB (maks 2 g) dalam 20 menit bila tidak respons 3× SABA. 6) ICU/intubasi bila silent chest, SpO₂ tetap <90%, kesadaran turun.'},
+  {topic:'Asma',q:'Mengapa LABA tidak boleh diberikan sebagai monoterapi pada asma?',a:'LABA monoterapi meningkatkan risiko kematian terkait asma (studi SMART: salmeterol monoterapi vs plasebo). Mekanisme: LABA → bronkodilatasi kuat → pasien merasa lebih baik → NAMUN inflamasi kronik terus berlanjut tanpa ICS → remodeling saluran napas progresif → eksaserbasi berat mendadak tanpa peringatan → kematian. LABA harus SELALU dikombinasi dengan ICS (fixed-dose combination lebih aman). LABA tidak tersedia untuk <5 tahun.'},
+  {topic:'Pneumonia',q:'Apa perbedaan pneumonia tipikal vs atipikal pada anak?',a:'TIPIKAL (S.pneumoniae): onset mendadak, demam tinggi menggigil, batuk produktif, tanda konsolidasi (perkusi redup, suara bronkial, ronki basah). Foto toraks: konsolidasi lobar/segmental. Terapi: amoksisilin/penisilin. ATIPIKAL (Mycoplasma, Chlamydia, virus): onset gradual, demam subfebris, batuk kering, gejala ekstra-pulmonal (sakit kepala, mialgia, ruam). Foto: infiltrat interstisial bilateral. Terapi: azitromisin/eritromisin. Atipikal lebih sering pada anak >5 tahun.'},
+  {topic:'Pneumonia',q:'Sebutkan tanda bahaya pneumonia pada anak <5 tahun yang memerlukan rawat inap!',a:'TANDA BAHAYA (WHO): 1) Tidak bisa minum/menyusu. 2) Kejang. 3) Letargi/tidak sadar. 4) Stridor saat istirahat. 5) SpO₂ <90% di udara ruangan. 6) Malnutrisi berat. 7) Empyema/abses. 8) Usia <2 bulan (semua pneumonia). 9) Tidak ada caretaker yang dapat monitor di rumah. Bila ada ≥1 tanda bahaya → rawat inap + antibiotik IV. Tambahan: retraksi dinding dada bawah = pneumonia berat → rawat inap.'},
+  {topic:'Pneumonia',q:'Apa itu empyema thoracis dan bagaimana membedakan stadium I, II, III?',a:'Empyema: pus di rongga pleura, komplikasi pneumonia. STADIUM I (eksudatif): cairan jernih, pH >7,2, glukosa normal, tidak ada septasi → antibiotik IV saja. STADIUM II (fibropurulen): cairan keruh/pus, pH <7,2, glukosa <60, LDH >1000, mulai ada lokulasi/septasi → chest tube drainase + antibiotik IV. STADIUM III (organisasi): pleura menebal fibrotik, paru terperangkap (trapped lung) → dekortikasi (VATS/torakotomi). Kunci: pH <7,2 = butuh drainase.'},
+  {topic:'TB',q:'Apa sistem skoring TB anak IDAI dan kapan OAT dimulai?',a:'Skor TB IDAI: Kontak BTA+ (3) + TST positif (3) + BB/TB <-2SD atau tidak naik 2 bulan (2) + demam ≥2 minggu (1) + batuk ≥3 minggu (1) + pembesaran KGB ≥1cm non-nyeri (1) + foto toraks sugestif (1). INTERPRETASI: ≥6 = mulai OAT (2RHZ/4RH). 4-5 = evaluasi lebih lanjut. <4 = bukan TB. CATATAN: skoring tidak untuk TB berat (meningitis, milier, tulang) → langsung mulai OAT tanpa menunggu skor.'},
+  {topic:'TB',q:'Apa perbedaan TB aktif dan infeksi TB laten (ILTB) dan bagaimana terapinya?',a:'TB AKTIF: ada gejala (demam, batuk, BB turun), TST positif, foto toraks abnormal, sputum/BTA/kultur mungkin positif → OAT 2RHZ/4RH (6 bulan) atau 2RHZE/10RH (TB berat). ILTB (Infeksi TB Laten): TST positif ≥10 mm TAPI foto toraks NORMAL + TANPA gejala TB aktif = bakteri ada tapi tidak berkembang. Terapi: profilaksis Isoniazid 10 mg/kgBB/hari × 6 BULAN (efektivitas 60-90% cegah TB aktif). Bukan OAT penuh.'},
+  {topic:'TB',q:'Apa ciri khas CSS pada TB meningitis dan bedanya dari meningitis bakterialis?',a:'CSS TB MENINGITIS: jernih/xantokrom, leukosit 100–500 (LIMFOSIT dominan), protein SANGAT TINGGI (100–400 mg/dL), glukosa SANGAT RENDAH (CSS/plasma <0,5), BTA kadang (+), Xpert MTB/RIF lebih sensitif. CSS BAKTERIALIS: keruh/purulenta, leukosit >1000 (PMN dominan), protein >100 mg/dL, glukosa sangat rendah, Gram pewarnaan (+), kultur bakteri (+). KUNCI BEDA: TB = limfosit; Bakteri = PMN. Keduanya protein tinggi + glukosa rendah.'},
+  {topic:'Bronkiolitis',q:'Mengapa salbutamol (bronkodilator) TIDAK digunakan pada bronkiolitis?',a:'AAP (American Academy of Pediatrics) 2014 merekomendasikan TIDAK menggunakan bronkodilator pada bronkiolitis. Alasan: (1) Obstruksi bronkiolitis bukan akibat bronkospasme otot polos (berbeda dari asma) tapi akibat edema mukosa + debris sel + sumbatan mukus → bronkodilator tidak membantu. (2) Uji klinis menunjukkan bronkodilator tidak mengurangi durasi rawat inap, lama sakit, atau kebutuhan O₂. (3) Bisa meningkatkan takikardi. Terapi: suportif (O₂, hidrasi). Epinefrin racemic: hanya di IGD jangka pendek.'},
+  {topic:'Bronkiolitis',q:'Apa faktor risiko bronkiolitis berat yang memerlukan rawat ICU?',a:'Faktor risiko bronkiolitis berat: 1) Usia <3 bulan (terbesar). 2) Prematuritas <35 minggu. 3) Berat lahir rendah. 4) Penyakit jantung bawaan (terutama dengan hipertensi pulmonal). 5) Displasia bronkopulmonal (BPD/CLD). 6) Imunodefisiensi. 7) Neuromuscular disease (tidak bisa batuk efektif). Indikator ICU: SpO₂ <88% meski O₂, apnea berulang, bradikardi, kelelahan napas berat, kebutuhan ventilasi mekanik. Palivizumab diberikan profilaksis untuk kelompok risiko ini.'},
+  {topic:'Croup',q:'Apa tatalaksana croup dan bagaimana dosis deksametason?',a:'TATALAKSANA CROUP: 1) Tenangkan anak (agitasi memperburuk obstruksi). 2) Deksametason 0,6 mg/kgBB dosis TUNGGAL oral/IM/IV (maks 8–16 mg) — untuk SEMUA derajat. Efektif dalam 30 menit, manfaat 24–48 jam. 3) Nebulisasi epinefrin racemic (sedang-berat): 0,5 mL epinefrin 2,25% dalam 3 mL NaCl 0,9%, atau epinefrin 1:1000 0,5 mL/kgBB (maks 5 mL). Onset 10–30 menit, observasi 2 jam (rebound). 4) O₂ bila SpO₂ <92%. 5) Intubasi pipa ET 0,5–1 nomor lebih kecil (jika gagal konservatif).'},
+  {topic:'Croup',q:'Bagaimana membedakan croup dari epiglotitis secara klinis?',a:'CROUP: usia <3 tahun, onset gradual (1–3 hari), batuk GONGGONG khas, stridor inspirasi ringan-berat, demam ringan, bisa nyaman di pangkuan, tampak tidak toksik. Foto: steeple sign (subglotis menyempit). EPIGLOTITIS: usia 3–7 tahun, onset MENDADAK (jam), TIDAK ADA batuk gonggong, stridor berat, demam tinggi 40°C + TOKSIK, TRIPOD position (condong ke depan, bertopang tangan), air liur menetes (tidak bisa menelan), sangat gelisah/rewel. Foto: thumbprint sign (epiglotis membesar). EPIGLOTITIS: JANGAN visualisasi langsung tanpa persiapan intubasi darurat!'},
+  {topic:'Difteri',q:'Apa yang membedakan pseudomembran difteri dari eksudat tonsilitis biasa?',a:'PSEUDOMEMBRAN DIFTERI: warna abu-abu kehitaman (bukan putih/kuning), melekat SANGAT KUAT pada jaringan bawah, BERDARAH bila dicabut paksa (necrotic), bisa meluas melewati tonsil ke palatum/uvula/faring/laring. Bisa meluas ke laring → stridor. EKSUDAT TONSILITIS BAKTERI (Streptococcus): putih/kuning, batas pada tonsil, mudah diangkat tanpa berdarah, tidak meluas ke laring. PERBEDAAN KUNCI: berdarah saat dicabut = difteri. Tidak berdarah = tonsilitis biasa.'},
+  {topic:'Difteri',q:'Mengapa ADS difteri harus diberikan SEBELUM hasil kultur tersedia?',a:'ADS (Anti-Difteri Serum) bekerja dengan MENETRALISIR TOKSIN yang belum berikatan dengan jaringan. Toksin yang sudah berikatan dengan sel miokardium/neuron tidak bisa dinetralisir oleh ADS (irreversible). Setiap jam penundaan → lebih banyak toksin berikatan → kerusakan permanen lebih luas. Hasil kultur: butuh 24–48 jam (terlalu lambat). Risiko ADS (anafilaksis) jauh lebih kecil dari risiko miokarditis fatal. Prinsip: terapi difteri adalah clinical diagnosis driven, bukan laboratory driven.'},
+  {topic:'Difteri',q:'Sebutkan komplikasi difteri dan mana yang paling sering menyebabkan kematian!',a:'KOMPLIKASI DIFTERI: 1) MIOKARDITIS (penyebab kematian TERSERING): terjadi minggu 1–2, EKG blok AV, aritmia, gagal jantung. 2) NEUROPATI: palatal palsy (regurgitasi hidung, suara sengau), diplegia okular (strabismus/diplopia), neuritis perifer, paralisis diafragma (minggu 3–7 → gagal napas). 3) OBSTRUKSI JALAN NAPAS: ekstensi pseudomembran ke laring → asfiksia. 4) Bull neck: kasus berat. Kematian: miokarditis (paling sering) atau asfiksia. Monitor EKG KONTINU pada semua kasus difteri.'},
+  {topic:'Pertusis',q:'Sebutkan 3 stadium pertusis dan mana yang paling infeksius!',a:'STADIUM 1 KATARAL (1–2 minggu): mirip ISPA biasa (pilek, batuk ringan, demam subfebris). PALING INFEKSIUS — bakteri paling banyak di nasofaring, tapi belum terdiagnosis. STADIUM 2 PAROKSISMAL (2–6 minggu): batuk serangan beruntun diakhiri WHOOP (tarikan napas keras panjang) + bisa diikuti muntah + sianosis. Pada bayi <6 bulan: APNEA (tidak ada whoop!). STADIUM 3 KONVALESENS (minggu–bulan): berkurang bertahap, bisa bertahan berbulan-bulan, trigger ISPA bisa kambuh. Mnemonik: Kataral = infeksius, Paroksismal = bergejala khas, Konvalesens = sembuh.'},
+  {topic:'Pertusis',q:'Mengapa pertusis sangat berbahaya pada bayi <6 bulan?',a:'Bayi <6 bulan dengan pertusis: (1) TIDAK ADA WHOOP — karena otot inspirasi dan dinding dada lemah → tidak bisa menghasilkan suara whoop. (2) Manifestasi: APNEA (henti napas tiba-tiba), bradikardi, sianosis setelah serangan batuk paroksismal. (3) LEUKOSITOSIS MASIF (50.000–100.000/mm³) → hiperviskositas → hipertensi pulmonal → gagal napas. (4) Kematian tinggi. Rawat ICU. Monitor SpO₂ dan EKG kontinu. Palivizumab tidak melindungi → vaksin Tdap ibu hamil trimester 3 (cocoon strategy) = pencegahan terbaik untuk neonatus sebelum bisa divaksin.'},
+  {topic:'TB',q:'Apa yang dimaksud directly observed therapy (DOT) dan mengapa penting pada TB anak?',a:'DOT = pengawas memastikan pasien menelan OAT secara langsung setiap hari. PENTINGNYA pada TB anak: (1) Anak bergantung pada orang tua/pengasuh → kepatuhan dipengaruhi banyak faktor. (2) OAT diminum tidak teratur → risiko resistensi (MDR-TB). (3) Durasi panjang (6–12 bulan) → mudah lupa atau dihentikan saat gejala membaik. (4) Efek samping (hepatotoksik) perlu dipantau. PMO (Pengawas Minum Obat): idealnya anggota keluarga yang terlatih. Tablet FDC (Fixed Dose Combination) anak tersedia di Puskesmas Indonesia.'},
+  {topic:'Asma',q:'Apa perbedaan obat reliever dan controller pada asma beserta contohnya?',a:'RELIEVER (pereda): bekerja CEPAT (5–10 menit), dipakai hanya saat ada gejala akut. SABA (Short-Acting Beta-2 Agonist): salbutamol, terbutalin. Penggunaan >2×/minggu = asma tidak terkontrol. TIDAK ada manfaat preventif. CONTROLLER (pengontrol): dipakai SETIAP HARI meski tidak ada gejala. ICS (Inhaled Corticosteroid): fluticasone, budesonide — antiinflamasi utama. LABA (Long-Acting Beta-2 Agonist): formoterol, salmeterol — HANYA kombinasi dengan ICS. Antileukotriene: montelukast. Anti-IgE: omalizumab (step 5). Prinsip: ICS = fondasi controller.'},
+  {topic:'Efusi',q:'Apa kriteria Light untuk membedakan eksudat dari transudat?',a:'KRITERIA LIGHT (eksudat bila ≥1 terpenuhi): 1) Protein cairan pleura / protein serum > 0,5. 2) LDH cairan pleura / LDH serum > 0,6. 3) LDH cairan pleura > 2/3 batas atas normal LDH serum. Bila memenuhi ≥1 = EKSUDAT (inflamasi, infeksi, keganasan). Bila tidak ada yang terpenuhi = TRANSUDAT (gagal jantung, SN, sirosis). Sensitivitas 98%, spesifisitas 83%. PENYEBAB eksudat tersering pada anak: pneumonia parapneumonic. Transudat tersering: gagal jantung kongestif dan sindrom nefrotik.'},
+  {topic:'Bronkiolitis',q:'Apa indikasi palivizumab untuk pencegahan RSV dan bagaimana cara pemberiannya?',a:'PALIVIZUMAB: antibodi monoklonal anti-RSV F protein. INDIKASI: prematuritas <35 minggu GA (dalam 2 tahun pertama), penyakit jantung bawaan hemodinamik bermakna (L-R shunt, sianotik), displasia bronkopulmonal (BPD/CLD), imunodefisiensi berat. PEMBERIAN: injeksi IM 15 mg/kgBB bulanan selama musim RSV (5 kali injeksi). EFEKTIVITAS: reduksi rawat inap ~50%. TIDAK mencegah infeksi RSV sama sekali, hanya mengurangi keparahan. Mahal → hanya untuk risiko tinggi. Tidak ada vaksin RSV yang disetujui untuk bayi (per 2024).'},
+  {topic:'Croup',q:'Apa itu steeple sign pada croup dan apa gambaran foto toraks pada epiglotitis?',a:'STEEPLE SIGN (croup): foto AP leher → subglotis menyempit (normal berbentuk trapezoid/lebar) menjadi sempit seperti menara gereja (steeple). Menggambarkan subglottic edema. Sensitifitas 50% — foto normal tidak menyingkirkan croup. THUMB PRINT SIGN (epiglotitis): foto lateral leher → epiglotis membesar dan tumpul seperti ibu jari (normally thin and finger-like). Gambaran klasik tapi foto toraks BUKAN pemeriksaan rutin pada epiglotitis karena berbahaya (anak bisa memburuk saat diposisikan supine). Jika curiga epiglotitis → langsung ke ruang operasi untuk intubasi terkontrol.'},
+  {topic:'Pneumonia',q:'Apa antibiotik pilihan untuk pneumonia neonatus (<3 minggu)?',a:'Pneumonia NEONATUS: etiologi berbeda dari anak besar. Bakteri: GBS (Group B Streptococcus), E.coli, Klebsiella, Listeria monocytogenes, S.aureus. Virus: CMV, HSV (berat, perlu asiklovir). TERAPI EMPIRIS: Ampisilin IV 200–400 mg/kgBB/hari ÷ 4 + Gentamisin IV 5 mg/kgBB/hari (once daily). Alasan kombinasi: ampisilin untuk GBS + Listeria, gentamisin untuk gram negatif. Bila curiga Staph.aureus → tambah oksasilin/vankomisin. Bila curiga CMV/HSV → asiklovir IV. Durasi: 10–14 hari IV.'},
+  {topic:'Pertusis',q:'Apa kegunaan vaksin Tdap pada ibu hamil trimester 3 untuk pencegahan pertusis neonatus?',a:'COCOON STRATEGY: vaksin Tdap diberikan kepada orang-orang di sekitar bayi baru lahir (orang tua, kakak, nenek) sehingga membentuk "lingkaran" pelindung di sekitar bayi yang belum bisa divaksin. Pada IBU HAMIL TRIMESTER 3 (usia gestasi 27–36 minggu): vaksin Tdap → membentuk antibodi ibu → antibodi melewati plasenta → neonatus mendapat proteksi pasif pasca lahir sampai bisa mendapat vaksin DPT pertama (usia 2 bulan). Efektivitas melindungi neonatus: 91% (CDC data). Tdap aman pada kehamilan.'},
+  {topic:'Efusi',q:'Apa tanda klinis efusi pleura pada pemeriksaan fisik?',a:'TANDA KLINIS EFUSI PLEURA: (1) PERKUSI: REDUP pada sisi efusi (cairan menghalangi resonansi). (2) AUSKULTASI: suara napas MELEMAH atau MENGHILANG pada sisi efusi. (3) FREMITUS TAKTIL (raba): MENURUN pada sisi efusi. (4) TRAKEA: deviasi ke SISI BERLAWANAN bila efusi masif (mediastinum terdorong). (5) Vocal resonance: menurun. Bila efusi bilateral: redup bilateral + suara napas bilateral melemah. BEDA DARI PNEUMOTORAKS: perkusi HIPERSONOR (bukan redup), trakea juga ke sisi berlawanan. BEDA DARI KONSOLIDASI: perkusi redup tapi suara napas MENINGKAT/bronkial.'},
+];
+
+const QUESTIONS = [
+  {topic:'Asma',q:'Anak 8 tahun sesak napas di IGD. Auskultasi: tidak terdengar suara napas atau mengi. SpO₂ 87%. Tidak bisa bicara. Interpretasi dan tindakan segera?',options:['Kondisi membaik, tidak ada mengi → pulangkan','Silent chest = gagal napas imminent. Bukan membaik. Segera: O₂ tinggi + SABA + kortikosteroid IV + Mg sulfat IV + siap intubasi RSI','Asma ringan, cukup nebulisasi di ruang biasa','Tidak perlu tindakan, tunggu dan lihat'],correct:1,explanation:'Silent chest: tidak ada mengi bukan karena obstruksi berkurang, tapi karena aliran udara TERLALU SEDIKIT untuk menghasilkan turbulensi/suara. Ini tanda obstruksi MAKSIMAL dan gagal napas imminent. SpO₂ 87% + tidak bisa bicara + silent chest = serangan berat mengancam jiwa. TINDAKAN: O₂ 100%, SABA + ipratropium nebulisasi, metilprednisolon IV, Mg sulfat IV 50 mg/kgBB, konsul ICU, siap intubasi RSI (ketamin 1–2 mg/kgBB + suksinilkolin).'},
+  {topic:'Asma',q:'Anak 6 tahun dengan asma. ICS dosis rendah sudah 3 bulan, masih ada gejala siang >2×/minggu, tidur terganggu 1–2× per minggu. Step therapy yang tepat?',options:['Hentikan ICS karena tidak efektif','Step UP ke Step 3: ICS dosis sedang ATAU ICS rendah + LABA (≥5 tahun)','Tetap step 2, tunggu 6 bulan lagi','Ganti ke kortikosteroid oral'],correct:1,explanation:'Evaluasi kontrol asma: gejala siang >2×/minggu + gejala malam/terbangun = SEBAGIAN TERKONTROL. Setelah ICS dosis rendah (step 2) selama ≥3 bulan tidak memberikan kontrol penuh → STEP UP ke step 3: pilihan (a) ICS dosis sedang, atau (b) ICS dosis rendah + LABA (untuk ≥5 tahun, tidak boleh <5 tahun). Cek dulu: kepatuhan, teknik inhaler, eksposur alergen sebelum step up. Tidak pernah ganti langsung ke steroid oral kecuali eksaserbasi akut.'},
+  {topic:'Pneumonia',q:'Bayi 10 bulan dibawa dengan batuk 3 hari, demam 38,5°C, frekuensi napas 55×/menit, retraksi dinding dada bawah, SpO₂ 87%. Diagnosis dan tatalaksana?',options:['Bronkiolitis ringan, rawat jalan + bronkodilator','Pneumonia berat (retraksi + SpO₂ <90%) → rawat inap + O₂ + amoksisilin IV 50 mg/kgBB/12 jam','Pneumonia ringan, antibiotik oral saja','Asma, nebulisasi salbutamol'],correct:1,explanation:'PNEUMONIA BERAT: takipnea (≥50/mnt untuk 2–12 bulan ✓) + RETRAKSI DINDING DADA BAWAH + SpO₂ 87% (<90%). Semua terpenuhi = pneumonia berat → RAWAT INAP. Tatalaksana: O₂ target SpO₂ ≥92-94%, amoksisilin IV 50 mg/kgBB/12 jam (atau benzilpenisilin). Evaluasi setiap 24–48 jam. Bila tidak membaik 48 jam → pertimbangkan atipik (tambah azitromisin) atau komplikasi (empyema → USG toraks). Umur 10 bulan: etiologi tersering S.pneumoniae dan virus.'},
+  {topic:'TB',q:'Anak 3 tahun kontak erat dengan ayah TB BTA+. TST 12 mm. Foto toraks normal. Tidak ada batuk/demam. Berat badan sesuai. Skor TB = 3 (hanya TST). Tatalaksana?',options:['Mulai OAT 2RHZ/4RH karena TST positif','Tidak perlu apapun, skor <6','Profilaksis Isoniazid (INH) 10 mg/kgBB/hari × 6 bulan (ILTB = infeksi TB laten)','Profilaksis INH tidak efektif, cukup observasi'],correct:2,explanation:'INFEKSI TB LATEN (ILTB): TST positif ≥10 mm + foto toraks NORMAL + TIDAK ada gejala TB aktif. Skor 3 saja (TST) = bukan TB aktif, tapi ada infeksi. Risiko progresi ke TB aktif tinggi pada anak <5 tahun (5–10% per tahun). TATALAKSANA: Profilaksis INH 10 mg/kgBB/hari × 6 bulan. Efektivitas: mengurangi risiko TB aktif 60–90%. Monitoring: SGOT/SGPT sebelum mulai, gejala hepatotoksik. OAT penuh (2RHZ/4RH) hanya untuk TB AKTIF (skor ≥6 atau klinis kuat).'},
+  {topic:'TB',q:'Anak 4 tahun dengan TB meningitis. Klinis stadium II. Terapi yang tepat?',options:['2RHZ/4RH saja (regimen standar)','2RHZE/10RH (total 12 bulan) + deksametason IV 0,4 mg/kgBB/6 jam × 4 minggu → taper 4 minggu','INH profilaksis saja','Rifampisin + isoniazid × 6 bulan'],correct:1,explanation:'TB MENINGITIS = TB BERAT → regimen diperpanjang: 2RHZE/10RH (total 12 bulan). Penambahan Etambutol penting karena penetrasi rifampisin ke SSP terbatas. DEKSAMETASON: menurunkan mortalitas dan sequelae dengan mengurangi inflamasi meningen. Dosis: 0,4 mg/kgBB/6 jam × 4 minggu → taper 4 minggu (total 8 minggu). Komplikasi: hidrosefalus (perlu VP shunt), SIADH, stroke. Prognosis: stadium I > stadium II > stadium III. Stadium III: mortalitas tinggi + sequelae neurologis berat.'},
+  {topic:'Bronkiolitis',q:'Bayi 3 bulan dibawa dengan sesak napas, batuk 4 hari, demam ringan. Auskultasi: krepitasi difus + mengi ekspirasi. SpO₂ 91%. Tidak mau menyusu. Tatalaksana yang paling tepat?',options:['Nebulisasi salbutamol setiap 4 jam + deksametason oral','Rawat inap + O₂ nasal kanul + NGT feeding + monitoring ketat. TIDAK perlu bronkodilator/steroid/antibiotik rutin','Rawat jalan + salbutamol MDI + antihistamin','Antibiotik oral + nebulisasi ipratropium'],correct:1,explanation:'BRONKIOLITIS: usia <2 tahun (3 bulan), prodrome viral, krepitasi difus + mengi, SpO₂ 91%. INDIKASI RAWAT INAP: SpO₂ <92% ✓, usia <3 bulan ✓, tidak mau menyusu ✓. TERAPI: O₂ target ≥92%, NGT feeding (karena tidak bisa menyusu), posisi head-up 30°, monitoring. TIDAK: salbutamol (AAP 2014: jangan), deksametason (tidak terbukti), antibiotik (viral). Epinefrin racemic: hanya di IGD jangka pendek. Self-limited 7–10 hari. Monitoring apnea penting pada bayi <2 bulan.'},
+  {topic:'Croup',q:'Anak 2 tahun datang dengan batuk seperti gonggong, stridor saat istirahat, retraksi ringan. Skor Westley 5. SpO₂ 96%. Tatalaksana?',options:['Rawat jalan, antibiotik oral saja','Deksametason oral 0,6 mg/kgBB dosis tunggal + nebulisasi epinefrin + observasi di IGD minimal 2 jam + O₂ bila SpO₂ turun','Intubasi segera','Kortikosteroid sistemik 5 hari'],correct:1,explanation:'CROUP SEDANG (skor Westley 3–7): stridor saat istirahat + retraksi → rawat inap atau observasi IGD. TATALAKSANA: (1) Deksametason 0,6 mg/kgBB oral/IM dosis tunggal (untuk semua derajat croup, termasuk ringan). (2) Nebulisasi epinefrin racemic 0,5 mL dalam 3 mL NaCl (onset cepat 10–30 mnt, durasi 1–2 jam → observasi minimal 2 jam karena rebound effect). (3) Tenangkan anak. (4) O₂ bila SpO₂ <92%. Antibiotik: tidak ada indikasi (viral). Deksametason efek bertahan 24–48 jam.'},
+  {topic:'Difteri',q:'Anak 5 tahun, demam 5 hari, nyeri tenggorok, pseudomembran abu-abu di tonsil yang berdarah saat dokter mencoba mengangkat, limfadenopati servikal masif. Tatalaksana pertama yang PALING MENDESAK?',options:['Kultur swab tenggorok, tunggu hasil sebelum terapi','ADS (Anti-Difteri Serum) segera + penisilin/eritromisin IV + isolasi ketat. Jangan tunggu kultur','Antibiotik oral amoksisilin saja','Tonsilektomi segera'],correct:1,explanation:'DIFTERI: pseudomembran abu-abu yang BERDARAH saat dicabut = patognomonik difteri. TINDAKAN PALING MENDESAK: ADS SEGERA (sebelum hasil kultur) karena ADS hanya efektif menetralisir toksin BEBAS (belum berikatan dengan sel). Setiap jam penundaan → lebih banyak toksin berikatan dengan miokardium → miokarditis fatal. Dosis ADS berdasarkan derajat: sedang-berat (laring/bull neck) → 40.000–80.000 IU IV. Lakukan uji sensitivitas kulit dulu (anafilaksis). Antibiotik: penisilin G atau eritromisin 14 hari (eradikasi bakteri). Isolasi ketat + lapor dinas kesehatan.'},
+  {topic:'Pertusis',q:'Bayi 2 bulan dibawa dengan riwayat batuk berderet kemudian terlihat biru lalu napas berhenti beberapa detik. Leukosit 62.000/mm³ dengan 80% limfosit. Diagnosis dan tatalaksana?',options:['Asma bayi — nebulisasi salbutamol','Pertusis pada bayi (apnea + leukositosis limfositosis masif) → rawat ICU + azitromisin + monitoring apnea/SpO₂/EKG + oksigen','Bronkiolitis — terapi suportif','Pneumonia viral — antibiotik makrolid rawat jalan'],correct:1,explanation:'PERTUSIS BAYI <6 BULAN: tidak ada whoop (otot lemah) → manifes sebagai APNEA + sianosis setelah batuk paroksismal. LIMFOSITOSIS MASIF (62.000, 80% limfosit) = KHAS pertusis. Bedakan dari leukemia: pertusis limfosit MATUR (bukan blast). RAWAT ICU: apnea + bradikardi + sianosis. AZITROMISIN: 10 mg/kgBB hari 1 → 5 mg/kgBB hari 2–5 (makrolid terbaik untuk <1 bulan). Monitoring: SpO₂ kontinu, EKG (hipertensi pulmonal). Isolasi. Profilaksis kontak serumah.'},
+  {topic:'Efusi',q:'Anak 7 tahun pneumonia berat sudah 10 hari antibiotik tapi demam persisten. USG toraks: cairan pleura dengan septasi, pH cairan 7,1, glukosa 40 mg/dL, LDH 1800 U/L. Tatalaksana?',options:['Lanjutkan antibiotik yang sama saja','Ganti antibiotik saja cukup','Chest tube drainase + antibiotik IV (ampisilin-klavulanat atau ampisilin-sulbaktam) — empyema stadium II (fibropurulen): pH <7,2, LDH tinggi, glukosa rendah, septasi','Operasi torakotomi segera'],correct:2,explanation:'EMPYEMA STADIUM II (fibropurulen): septasi pada USG + pH <7,2 + glukosa <60 + LDH >1000 → INDIKASI DRAINASE. Kriteria drainase: pH <7,2 ATAU glukosa <60 ATAU LDH >1000 ATAU pus frank. TATALAKSANA: chest tube (water-seal drain) + antibiotik IV. Bila chest tube tidak adekuat karena lokulasi → VATS (video-assisted thoracoscopic surgery) atau fibrinolisis intrapleural (streptokinase/urokinase). Stadium I (pH >7,2): antibiotik saja. Stadium III (organisasi): dekortikasi torakotomi.'},
+  {topic:'Pneumonia',q:'Anak 2 tahun dengan pneumonia, sudah 48 jam amoksisilin IV tapi demam persisten dan kondisi tidak membaik. Foto toraks: opasitas sisi kanan baru lebih luas. Langkah berikutnya?',options:['Lanjutkan amoksisilin sama 5 hari lagi','Evaluasi: USG toraks (singkirkan empyema) + pertimbangkan penggantian antibiotik (broader spectrum) + cek kultur','Tambah antihistamin','Pulangkan dan rawat jalan'],correct:1,explanation:'PNEUMONIA TIDAK MEMBAIK 48 JAM: perlu evaluasi sistematis. LANGKAH: (1) USG toraks → singkirkan efusi pleura/empyema (paling umum menyebabkan kegagalan antibiotik). (2) Tinjau organisme: bila S.aureus atau gram negatif → ganti ke vankomisin + seftriakson. (3) Pastikan dosis adekuat dan IV. (4) Kultur darah/sputum/aspirat. (5) Pertimbangkan: pneumatocele (S.aureus), abses paru, pneumonia atipikal (tambah azitromisin). (6) Foto toraks ulang. Jangan tunda evaluasi bila memburuk.'},
+  {topic:'TB',q:'Anak 4 tahun skor TB = 7 (kontak TB+ ayah, TST 14mm, BB/TB <-2SD, foto sugestif KGB hilus). OAT yang diberikan dan berapa lama?',options:['INH profilaksis 6 bulan','2RHZ / 4RH (total 6 bulan) — fase intensif 2 bulan (RHZ setiap hari) + fase lanjutan 4 bulan (RH setiap hari)','2RHZE / 10RH karena ada KGB hilus','Tidak perlu OAT, skor tidak sampai 10'],correct:1,explanation:'SKOR TB ≥6 = PROBABLE TB → mulai OAT setelah singkirkan diagnosis lain. Skor 7 + KGB hilus (sugestif TB primer limfadenopati) = TB RINGAN-SEDANG (bukan TB berat). REGIMEN: 2RHZ/4RH. Fase intensif 2 bulan: R (10–15 mg/kg) + H (7–15 mg/kg) + Z (30–40 mg/kg) SETIAP HARI. Fase lanjutan 4 bulan: R + H setiap hari. Etambutol tidak perlu untuk TB ringan-sedang (kecuali curiga resistensi atau TB berat). FDC tablet anak di Puskesmas Indonesia. Monitoring: berat badan, efek samping hepatotoksik.'},
+  {topic:'Bronkiolitis',q:'Orang tua bayi 5 bulan dengan bronkiolitis bertanya mengapa tidak diberikan obat pelega napas (bronkodilator). Penjelasan yang benar?',options:['Karena obatnya habis di apotek','Karena bronkiolitis disebabkan virus, bukan bakteri, sehingga antibiotik pun tidak berguna (ini bukan penjelasan bronkodilator)','Bronkiolitis bukan akibat bronkospasme otot polos (seperti asma) tapi akibat edema mukosa + mukus + debris sel epitel → bronkodilator tidak efektif. Uji klinis besar: tidak mengurangi lama rawat atau SpO₂','Bronkodilator berbahaya untuk semua bayi'],correct:2,explanation:'MEKANISME OBSTRUKSI: Asma = BRONKOSPASME otot polos → respons bronkodilator. Bronkiolitis = EDEMA MUKOSA + produksi mukus + nekrosis sel epitel bronkiolus + sumbatan luminal → bronkodilator tidak bisa mengatasi penyumbatan struktural ini. BUKTI KLINIS: cochrane review + AAP 2014 clinical practice guideline: bronkodilator (termasuk epinefrin) tidak mengurangi lama rawat, durasi O₂, atau kebutuhan ICU pada bronkiolitis. Terapi suportif tetap terbaik: O₂, hidrasi, posisi.'},
+  {topic:'Asma',q:'Apa indikasi magnesium sulfat IV pada serangan asma anak dan berapa dosisnya?',options:['Semua serangan asma, sebagai terapi pertama','Serangan berat tidak respons SABA 3× (1 jam pertama). Dosis: 50 mg/kgBB IV dalam 20 menit (maks 2 g)','Hanya untuk status asmatikus yang butuh ICU','Tidak ada indikasi pada anak'],correct:1,explanation:'MG SULFAT IV pada asma: INDIKASI: serangan berat yang tidak respons setelah 3× nebulisasi SABA dalam 1 jam pertama. MEKANISME: Mg²⁺ antagonis kalsium → relaksasi otot polos bronkus → bronkodilatasi. DOSIS: 50 mg/kgBB IV dalam 20 menit (maks 2 g). BUKTI: meta-analisis menunjukkan mengurangi kebutuhan rawat ICU dan lama rawat inap. EFEK SAMPING: flushing, hipotensi ringan sementara, sedikit mengantuk. MONITORING: tekanan darah saat infus. Terapi adjuvant setelah SABA + steroid.'},
+  {topic:'Difteri',q:'EKG anak dengan difteri hari ke-8 menunjukkan PR interval 0,24 detik (memanjang) dan 2 ekstrasistol ventrikel. Tindakan?',options:['Tidak perlu tindakan khusus, lanjutkan terapi difteri biasa','Bed rest total + monitor EKG kontinu + konsul kardiologi anak (miokarditis difteri → blok AV, aritmia). Tidak ada terapi spesifik miokarditis, manajemen suportif','Tambah antibiotik baru','Operasi jantung segera'],correct:1,explanation:'MIOKARDITIS DIFTERI: terjadi hari ke 7–14 akibat toksin difteri merusak sel miokardium langsung. EKG: PR memanjang (blok AV derajat 1), blok bundle branch, ST-T changes, aritmia ventrikel. PR >0,20 detik = blok AV derajat 1. Komplikasi: blok AV total, VF → kematian mendadak. TATALAKSANA: BED REST TOTAL (mengurangi beban jantung), monitoring EKG kontinu, konsul kardiologi anak, siap pacu jantung sementara bila blok AV derajat 3. Tidak ada terapi spesifik miokarditis (ADS tidak efektif untuk toksin yang sudah berikatan). Ini penyebab kematian tersering difteri.'},
+  {topic:'Croup',q:'Bayi 6 bulan dengan demam tinggi 40°C mendadak, tidak mau berbaring, drooling, stridor inspirasi berat, tampak toksik. Tidak ada batuk gonggong. Tindakan yang paling tepat?',options:['Nebulisasi epinefrin dulu, nilai respons','Jangan visualisasi laring → langsung ke OK/ruang intubasi dengan ahli THT + anestesi standby → intubasi terkontrol + kultur darah + seftriakson IV (epiglotitis sampai terbukti sebaliknya)','Foto lateral leher untuk konfirmasi dulu','Deksametason oral dan pulangkan'],correct:1,explanation:'EPIGLOTITIS: demam tinggi mendadak + TOKSIK + tripod/drooling + stridor BERAT + TIDAK ADA batuk gonggong = epiglotitis sampai terbukti sebaliknya. TINDAKAN: JANGAN visualisasi laring di UGD (bisa memicu obstruksi total). JANGAN foto lateral leher dulu (butuh waktu, anak bisa decompensate). SEGERA ke ruang operasi dengan tim anestesi + THT: intubasi di sana dengan persiapan lengkap (trakeostomi standby). Setelah airway aman: kultur darah + seftriakson IV (H.influenzae tipe b). Antibiotik: seftriakson 100 mg/kgBB/hari × 7–10 hari. Pastikan imunisasi Hib.'},
+  {topic:'Pertusis',q:'Apa obat profilaksis yang diberikan kepada anggota keluarga yang kontak dengan anak pertusis dan berapa lama?',options:['Tidak perlu profilaksis','Amoksisilin 5 hari','Azitromisin: 10 mg/kg hari 1 → 5 mg/kg hari 2–5 (total 5 hari) untuk semua kontak serumah dalam 21 hari paparan, terutama bayi dan ibu hamil','Penisilin V oral 14 hari'],correct:2,explanation:'PROFILAKSIS KONTAK PERTUSIS: diberikan kepada semua kontak RUMAH TANGGA dalam 21 hari paparan (masa inkubasi). PRIORITAS TINGGI: bayi <1 tahun, ibu hamil, individu dengan risiko komplikasi berat. OBAT: Azitromisin 10 mg/kgBB hari 1 → 5 mg/kgBB hari 2–5 (5 hari). Atau Eritromisin 40 mg/kgBB/hari × 14 hari (alternatif). TUJUAN: mencegah penularan ke anggota keluarga rentan, terutama neonatus/bayi yang paling berisiko kematian. Profilaksis efektif bila diberikan dalam 21 hari paparan (sebelum gejala atau sangat awal).'},
+  {topic:'TB',q:'Anak 5 tahun dengan foto toraks: infiltrat milier (bintik-bintik halus di kedua paru). TST negatif (anergi). Apa interpretasi dan tatalaksana?',options:['TST negatif = bukan TB, tidak perlu OAT','TB milier (TB berat hematogen). TST negatif pada TB milier bisa karena anergi (anargi = gagal reaktivasi imun saat penyakit parah). Mulai OAT segera: 2RHZE/10RH + pertimbangkan deksametason bila ada meningitis','Pneumonia bilateral biasa, antibiotik standar','Tunggu kultur 2 bulan sebelum terapi'],correct:1,explanation:'TB MILIER: penyebaran hematogen M.tuberculosis ke seluruh tubuh → bintik milier (2–3 mm) di foto toraks. TB BERAT → regimen diperpanjang: 2RHZE/10RH. TST NEGATIF pada TB milier: bisa terjadi karena ANERGI (sistem imun sangat tertekan, tidak bisa membentuk respons tuberkulin) pada TB berat, malnutrisi berat, atau imunosupresi. TST negatif TIDAK menyingkirkan TB milier bila klinis kuat. PRINSIP: pada TB milier, jangan tunda OAT menunggu konfirmasi TST/kultur. Cari meningitis TB bersamaan (LP). Deksametason bila ada meningitis TB.'},
+  {topic:'Efusi',q:'Anak 12 tahun dengan sesak napas bertahap, perkusi redup sisi kiri, suara napas kiri menghilang, trakea deviasi ke kanan. Diagnosis dan langkah awal?',options:['Pneumotoraks kiri — dekompresi jarum','Efusi pleura masif sisi kiri → konfirmasi foto toraks/USG → torakosintesis terapeutik bila sesak berat + analisis cairan (eksudat vs transudat, cari etiologi)','Atelektasis kiri — fisioterapi','Pneumonia kiri — antibiotik IV'],correct:1,explanation:'TANDA KLINIS EFUSI MASIF: perkusi REDUP (bukan hipersonor = bukan pneumotoraks) + suara napas menghilang + trakea ke SISI BERLAWANAN (mediastinum terdorong). Usia 12 tahun + sesak bertahap → paling mungkin efusi parapneumonia, TB pleura, atau LES. LANGKAH: konfirmasi USG/foto toraks → torakosintesis diagnostik + terapeutik (bila sesak) → analisis cairan: protein, LDH, glukosa, sel, BTA, kultur, pH → tentukan eksudat/transudat → cari etiologi. BEDA PNEUMOTORAKS: suara napas menghilang + perkusi HIPERSONOR (bukan redup). Keduanya → trakea ke sisi berlawanan bila masif/tension.'},
+  {topic:'Asma',q:'Dokter akan memberikan ICS (flutikason) pada anak 7 tahun dengan asma sedang persisten. Orang tua khawatir efek samping steroid. Penjelasan yang paling tepat?',options:['ICS sama berbahayanya dengan steroid oral','ICS dosis standar: absorpsi sistemik sangat minimal (<1%), efek samping sistemik sangat kecil dibanding steroid oral. Risiko: kandidiasis oral (dapat dicegah dengan berkumur setelah memakai inhaler). Manfaat jauh melebihi risiko pada dosis yang direkomendasikan','ICS menyebabkan pertumbuhan terhambat permanen','ICS tidak perlu, cukup salbutamol PRN'],correct:1,explanation:'ICS VS STEROID ORAL: ICS bekerja LOKAL di saluran napas → absorpsi sistemik <1% pada dosis standar (fluticasone 100–200 µg/hari, budesonide 200–400 µg/hari) → efek samping sistemik sangat minimal. EFEK SAMPING ICS: kandidiasis oral (pencegahan: berkumur + gosok gigi setelah pakai, spacer mengurangi deposisi orofaring), disfonia ringan (reversibel). Pertumbuhan: ICS dosis rendah-sedang: efek sangat minimal (<0,5 cm pada tinggi dewasa). MANFAAT ICS: mencegah eksaserbasi, mengurangi rawat inap, memperbaiki kualitas hidup. Risiko tidak kontrol asma > risiko ICS.'},
+  {topic:'Pertusis',q:'Apa lab yang PALING KHAS pada pertusis dan bagaimana membedakannya dari leukemia akut?',options:['Trombositopenia berat','Leukositosis masif (15.000–100.000/mm³) dengan LIMFOSITOSIS ABSOLUT. Pertusis: limfosit MATUR dan normal secara morfologi. Leukemia: ada BLAST (limfosit imatur, nukleus besar, kromatik halus). Apus darah tepi dan BMP untuk konfirmasi','CRP sangat tinggi','Anemia berat'],correct:1,explanation:'LEUKOSITOSIS LIMFOSITOSIS pada pertusis: sangat khas, bisa 50.000–100.000/mm³. MEKANISME: toksin pertussis menghambat migrasi limfosit dari darah ke jaringan limfoid → penumpukan limfosit di darah. BEDA LEUKEMIA LIMFOSITIK AKUT (ALL): ALL juga leukositosis limfositik TAPI sel BLAST (imatur): nukleus besar, kromatit halus, nukleoulus jelas, high N:C ratio, peroxidase negatif. Pertusis: limfosit MATUR normal. Cara beda: APUS DARAH TEPI → matur vs blast. Bila meragukan → BMP (pertusis: BMP normal; ALL: >20% blast). Kasus pertusis berat: leukosit >50.000 → hiperviskositas → hipertensi pulmonal.'},
+  {topic:'Bronkiolitis',q:'Bayi 2 bulan datang dengan bronkiolitis. Di antara berikut, mana yang TIDAK perlu dilakukan secara rutin?',options:['Monitor SpO₂','Pemberian O₂ bila SpO₂ <92%','Nebulisasi salbutamol rutin setiap 4 jam','Hidrasi adekuat via NGT bila tidak bisa minum'],correct:2,explanation:'BRONKIOLITIS — apa yang TIDAK perlu: Nebulisasi SALBUTAMOL rutin → AAP guideline 2014: jangan gunakan bronkodilator pada bronkiolitis (tidak terbukti bermanfaat, tidak mengurangi lama rawat/O₂ kebutuhan). Yang harus dilakukan: monitor SpO₂ (wajib) ✓, O₂ bila <92% ✓, NGT feeding bila tidak bisa minum ✓, nasal suction sebelum menyusu ✓, monitor apnea (bayi <2 bulan) ✓. Yang kontroversial tapi kadang dipakai di IGD saja: epinefrin racemic nebulisasi (bukan untuk rawat jalan). Yang tidak terbukti: steroid, antibiotik, NaCl hipertonik.'},
+  {topic:'Croup',q:'Anak 3 tahun dengan croup ringan (skor Westley 1, hanya batuk gonggong sesekali, tidak ada stridor istirahat). Orang tua meminta pulang. Terapi yang tepat?',options:['Tidak perlu terapi apapun, pulangkan langsung','Deksametason oral 0,6 mg/kgBB DOSIS TUNGGAL sebelum pulang + edukasi orang tua tanda bahaya (stridor memburuk, sianosis, tidak bisa minum → ke IGD)','Antibiotik oral eritromisin 7 hari','Rawat inap semalam untuk observasi'],correct:1,explanation:'CROUP RINGAN (skor 0–2): rawat jalan boleh. TAPI tetap berikan DEKSAMETASON ORAL 0,6 mg/kgBB dosis tunggal. Alasan: deksametason terbukti mengurangi kecemasan orang tua, kunjungan ulang ke IGD, dan mencegah progresi ke derajat lebih berat meski pada kasus ringan. Manfaat bertahan 24–48 jam. TIDAK perlu: antibiotik (viral), nebulisasi epinefrin (untuk sedang-berat), rawat inap (ringan). EDUKASI: croup biasanya memburuk malam hari, tanda harus ke IGD (stridor saat istirahat, tidak bisa minum, sianosis, kesadaran turun). Dingin malam (udara luar) kadang meredakan stridor.'},
+];
+
+let fcCards=[...FLASHCARDS],fcIdx=0,fcFilter='Semua';
+let qMode='belajar',qList=[],qCur=0,qScore=0,qAnswered=[];
+let timerInt=null,timeLeft=90;
+
+function showSec(id,el){
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  document.querySelectorAll('.nb').forEach(b=>b.classList.remove('active'));
+  el.classList.add('active');
+  if(id==='flashcard')initFC();
+}
+function initFC(){
+  const topics=['Semua',...new Set(FLASHCARDS.map(c=>c.topic))];
+  document.getElementById('fcChips').innerHTML=topics.map(t=>`<div class="chip ${t===fcFilter?'active':''}" onclick="setFCTopic('${t}',this)">${t}</div>`).join('');
+  filterFC();
+}
+function setFCTopic(t,el){document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));el.classList.add('active');fcFilter=t;filterFC();}
+function filterFC(){fcCards=fcFilter==='Semua'?[...FLASHCARDS]:FLASHCARDS.filter(c=>c.topic===fcFilter);fcIdx=0;updateFC();}
+function updateFC(){
+  const c=fcCards[fcIdx];
+  document.getElementById('fcQ').textContent=c.q;
+  document.getElementById('fcA').textContent=c.a;
+  document.getElementById('fcCur').textContent=fcIdx+1;
+  document.getElementById('fcTot').textContent=fcCards.length;
+  document.getElementById('fcTopic').textContent=c.topic;
+  document.getElementById('fcFill').style.width=((fcIdx+1)/fcCards.length*100)+'%';
+  document.getElementById('fc-el').classList.remove('flipped');
+}
+function flipCard(){document.getElementById('fc-el').classList.toggle('flipped');}
+function nextCard(){fcIdx=(fcIdx+1)%fcCards.length;updateFC();}
+function prevCard(){fcIdx=(fcIdx-1+fcCards.length)%fcCards.length;updateFC();}
+function shuffleCards(){for(let i=fcCards.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[fcCards[i],fcCards[j]]=[fcCards[j],fcCards[i]];}fcIdx=0;updateFC();}
+function selMode(m,el){qMode=m;document.querySelectorAll('.mode-btn').forEach(b=>b.classList.remove('active'));el.classList.add('active');}
+function startQuiz(){
+  qList=[...QUESTIONS].sort(()=>Math.random()-.5).slice(0,Math.min(30,QUESTIONS.length));
+  qCur=0;qScore=0;qAnswered=[];
+  document.getElementById('quizSetup').style.display='none';
+  document.getElementById('quizGame').style.display='block';
+  document.getElementById('quizResult').style.display='none';
+  document.getElementById('qTot').textContent=qList.length;
+  renderQ();
+}
+function renderQ(){
+  const q=qList[qCur];
+  document.getElementById('qCur').textContent=qCur+1;
+  document.getElementById('btnNext').style.display='none';
+  document.getElementById('btnFin').style.display='none';
+  const L=['A','B','C','D'];
+  document.getElementById('qCont').innerHTML=`<div class="q-card">
+    <div class="q-num">Soal ${qCur+1}/${qList.length} · ${q.topic}</div>
+    <div class="q-text">${q.q}</div>
+    <div class="options">${q.options.map((o,i)=>`<button class="opt" onclick="ansQ(${i})" id="opt${i}"><span class="ol">${L[i]}</span><span>${o}</span></button>`).join('')}</div>
+    <div class="q-expl" id="expl">${q.explanation}</div></div>`;
+  if(qMode==='ujian'){
+    timeLeft=90;const t=document.getElementById('qtimer');
+    t.style.display='block';t.textContent=90;t.classList.remove('warn');
+    clearInterval(timerInt);
+    timerInt=setInterval(()=>{timeLeft--;t.textContent=timeLeft;if(timeLeft<=10)t.classList.add('warn');if(timeLeft<=0){clearInterval(timerInt);autoAns();}},1000);
+  }
+}
+function ansQ(idx){
+  clearInterval(timerInt);const q=qList[qCur];const ok=idx===q.correct;
+  if(ok)qScore++;qAnswered.push({q,chosen:idx,correct:ok});
+  document.querySelectorAll('.opt').forEach((b,i)=>{b.disabled=true;if(i===q.correct)b.classList.add('correct');else if(i===idx&&!ok)b.classList.add('wrong');});
+  if(qMode==='belajar')document.getElementById('expl').classList.add('show');
+  if(qCur<qList.length-1)document.getElementById('btnNext').style.display='block';
+  else document.getElementById('btnFin').style.display='block';
+}
+function autoAns(){qAnswered.push({q:qList[qCur],chosen:-1,correct:false});document.querySelectorAll('.opt').forEach((b,i)=>{b.disabled=true;if(i===qList[qCur].correct)b.classList.add('correct');});if(qCur<qList.length-1)document.getElementById('btnNext').style.display='block';else document.getElementById('btnFin').style.display='block';}
+function nextQ(){qCur++;renderQ();}
+function finishQuiz(){
+  clearInterval(timerInt);
+  document.getElementById('quizGame').style.display='none';
+  document.getElementById('quizResult').style.display='block';
+  const pct=Math.round(qScore/qList.length*100);
+  let em='😢',lb='Perlu belajar lagi';
+  if(pct>=80){em='🏆';lb='Luar biasa! Siap PPDS!';}
+  else if(pct>=60){em='👍';lb='Bagus! Masih bisa lebih baik.';}
+  else if(pct>=40){em='📚';lb='Cukup. Fokus materi yang salah.';}
+  document.getElementById('remoji').textContent=em;
+  document.getElementById('rscore').textContent=`${qScore}/${qList.length}`;
+  document.getElementById('rlabel').textContent=lb;
+  document.getElementById('reviewCont').innerHTML='<p class="sl">Review Jawaban</p>'+
+    qAnswered.map((a,i)=>`<div class="q-card" style="border-left:4px solid ${a.correct?'var(--gr)':'#E74C3C'}">
+      <div class="q-num">${a.correct?'✅':'❌'} Soal ${i+1} · ${a.q.topic}</div>
+      <div class="q-text" style="font-size:.82rem">${a.q.q}</div>
+      <div style="font-size:.74rem;color:var(--gr);margin-top:4px"><strong>Jawaban benar:</strong> ${a.q.options[a.q.correct]}</div>
+      ${!a.correct&&a.chosen>=0?`<div style="font-size:.74rem;color:#E74C3C"><strong>Jawaban kamu:</strong> ${a.q.options[a.chosen]}</div>`:''}
+      <div class="q-expl show" style="display:block;margin-top:7px">${a.q.explanation}</div>
+    </div>`).join('');
+}
+function resetQuiz(){document.getElementById('quizSetup').style.display='block';document.getElementById('quizGame').style.display='none';document.getElementById('quizResult').style.display='none';}
+initFC();
+</script>
+</body>
+</html>
